@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="8krugmkuv1lrxu-3khhvd">
+		<property name="$metaclass" value="UseCaseClassifier20"/>
+		<property name="$name" value="IWWWDNW"/>
+		<node uin="gj7tthkuv1mbmqfib2ge">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Spielzug"/>
+			<node uin="-24q98xla8eptvu-eou96d">
+				<property name="$metaclass" value="ExtensionPoint20"/>
+				<property name="$name" value="Spiel wird beendet"/>
+			</node>
+			<node uin="-24q98xla8esda6-4yaehz">
+				<property name="$metaclass" value="ExtensionPoint20"/>
+				<property name="$name" value="Spieler gibt auf"/>
+			</node>
+			<node uin="-24q98xla8eu00jklcpyv">
+				<property name="$metaclass" value="ExtensionPoint20"/>
+				<property name="$name" value="Spieler greift anderen Spieler an"/>
+			</node>
+		</node>
+		<node uin="gj7tthkuv1mms1-g3cyur">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Duell"/>
+			<link uin="ieje0rla8ds7x3-x6jd2e">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::gj7tthkuv1mbmqfib2ge:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+			<node uin="-46k66rla8eg4h2-5dvlom">
+				<property name="$metaclass" value="Activity20"/>
+				<property name="$name" value="Activity1"/>
+				<link uin="ieje0rla8eg4h3yfrpjb">
+					<property name="$metaclass" value="SD20_Interaction_LinkToContext"/>
+					<participant referencedUin="design:node:::-46k66rla8eg4h2-5dvlom:gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+					<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+				</link>
+			</node>
+			<node uin="-24q98xla8ega9asmfyt4">
+				<property name="$metaclass" value="ExtensionPoint20"/>
+				<property name="$name" value="Spieler wird Weiser der Weisen"/>
+			</node>
+		</node>
+		<node uin="gj7tthla8divsg-w6q3ad">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Spiel konfigurieren"/>
+			<link uin="ieje0rla8dtsvz-5k6ts5">
+				<property name="$metaclass" value="Include20"/>
+				<participant referencedUin="design:node:::gj7tthla8divsg-w6q3ad:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::gj7tthkuv1mbmqfib2ge:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rla8e0269i05ffo">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::gj7tthla8divsg-w6q3ad:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jla8dzqx8-i1fcgo" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="gj7tthla8djc8nptpa09">
+			<property name="$metaclass" value="UseCase20"/>
+			<property name="$name" value="Spielende"/>
+			<link uin="ieje0rla8dwuuk-5wccgj">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rla8dwx16-8fkehn">
+				<property name="$metaclass" value="Extend20"/>
+				<participant referencedUin="design:node:::gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::gj7tthkuv1mbmqfib2ge:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rla8e04tsfillf9">
+				<property name="$metaclass" value="KernelAssociation20"/>
+				<participant referencedUin="design:node:::gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Client"></participant>
+				<participant referencedUin="design:node:::8bho0jla8dzqx8-i1fcgo" role="Supplier"></participant>
+			</link>
+		</node>
+	</node>
+	<node uin="8bho0jkuv1lwvmclidtz">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Spieler"/>
+		<link uin="ieje0rla8ec4ft99lzl4">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="*"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthla8divsg-w6q3ad:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rla8ecbjx34jtl2">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mbmqfib2ge:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rla8ecepa-uoirv0">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="2"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+		<link uin="ieje0rla8eck86-jzcpzr">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<property name="clientCardinality" value="*"/>
+			<participant referencedUin="design:node:::8bho0jkuv1lwvmclidtz" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="1g64ykuv1s1iqawrpd2">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Falls Sie weitere Akteure und Use Cases finden, fügen Sie diese bitte hinzu. Geben Sie Ihrem System, den Akteuren und den Use Cases noch aussagekräftige Namen."/>
+	</node>
+	<node uin="8bho0jla8dep17-wrbhuq">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="angegriffener Spieler"/>
+		<link uin="ieje0rla8dggyt4plt3r">
+			<property name="$metaclass" value="KernelAssociation20"/>
+			<participant referencedUin="design:node:::8bho0jla8dep17-wrbhuq" role="Client"></participant>
+			<participant referencedUin="design:node:::gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="8bho0jla8drkayd1ct7">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Actor1"/>
+	</node>
+	<node uin="8bho0jla8dzqx8-i1fcgo">
+		<property name="$metaclass" value="Actor20"/>
+		<property name="$name" value="Alle Spieler zusammen"/>
+	</node>
+	<node uin="ttifwdla8elm51-yrtmup">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint1"/>
+		<node uin="ul14qala8elm52we3vpk">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="text"/>
+			<property name="body" value="Condition:&#10;Wissenstandanzeige hat überall 5 Punkte&#10;Extension Point: Spieler wird Weiser der Weisen&#10;&#10;"/>
+		</node>
+		<link uin="ieje0rla8elm5y-rs092f">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdla8elm51-yrtmup" role="Client"></participant>
+			<participant referencedUin="design:link:::ieje0rla8dwuuk-5wccgj:gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ttifwdla8eqbu8-whrj87">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint2"/>
+		<node uin="ul14qala8eqbu8-qzwt6j">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="text"/>
+			<property name="body" value="Condition: Spieler hat Spiel beendet&#10;Extension Point: Spiel wird beendet&#10;"/>
+		</node>
+		<link uin="ieje0rla8ethft54c7wt">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdla8eqbu8-whrj87" role="Client"></participant>
+			<participant referencedUin="design:link:::ieje0rla8dwx16-8fkehn:gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ttifwdla8evdv3uqzlq4">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint3"/>
+		<node uin="ul14qala8evdv45xbiaq">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="text"/>
+			<property name="body" value="Condition: Spieler greift andenen Spieler an&#10;Extension Point: Spieler greift andenen Spieler an"/>
+		</node>
+		<link uin="ieje0rla8ewa5x-7ix5vp">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdla8evdv3uqzlq4" role="Client"></participant>
+			<participant referencedUin="design:link:::ieje0rla8ds7x3-x6jd2e:gj7tthkuv1mms1-g3cyur:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+	<node uin="ttifwdla8exl40-7hwvfv">
+		<property name="$metaclass" value="Constraint"/>
+		<property name="$name" value="Constraint4"/>
+		<node uin="ul14qala8exl41-gp0920">
+			<property name="$metaclass" value="ValueSpecification"/>
+			<property name="$name" value="ValueSpecification1"/>
+			<property name="language" value="text"/>
+			<property name="body" value="Condition: Spieler gibt auf und es ist nur noch 1 Spieler übrig&#10;Extension Point: Spieler gibt auf&#10;"/>
+		</node>
+		<link uin="ieje0rla8ez3av-uadzvv">
+			<property name="$metaclass" value="ConstraintLink"/>
+			<participant referencedUin="design:node:::ttifwdla8exl40-7hwvfv" role="Client"></participant>
+			<participant referencedUin="design:link:::ieje0rla8dwx16-8fkehn:gj7tthla8djc8nptpa09:8krugmkuv1lrxu-3khhvd" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>
