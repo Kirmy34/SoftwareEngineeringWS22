@@ -45,7 +45,7 @@
 			<link uin="ieje0rlaqzq57k-93553r">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-fdk6dylaqzkzle98aqvh:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4laqzptjw-bk0ftp:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::r4d75ylas6mpzi-83pn1f:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-3h29qlaqyhiov-bv8faw">
@@ -60,24 +60,6 @@
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-3h29qlaqyhiov-bv8faw:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4laqyztoo-8rxafi:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
-		</node>
-		<node uin="-fdk6dylaqy9bje-1obmkd">
-			<property name="$metaclass" value="JoinNode20"/>
-			<property name="$name" value="JoinNode21"/>
-			<link uin="ieje0rlaqyciks-1n9sjf">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<participant referencedUin="design:node:::-fdk6dylaqy9bje-1obmkd:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4laqybtrtwlbvkq:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
-		</node>
-		<node uin="-fdk6dylaqxt28y-b5rni9">
-			<property name="$metaclass" value="JoinNode20"/>
-			<property name="$name" value="JoinNode20"/>
-			<link uin="ieje0rlaqxxsyw12ptgj">
-				<property name="$metaclass" value="ControlFlow20"/>
-				<participant referencedUin="design:node:::-fdk6dylaqxt28y-b5rni9:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4laqxw823-n2n6jp:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="a6k48rkuv1jbkp-fm3sga">
@@ -163,6 +145,16 @@
 				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::sbhn20laqzoyht-w5klhz:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
+			<link uin="ieje0rlas6mpzlspmzcl">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::r4d75ylas6mpzi-83pn1f:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlas6mrq5-bwq57g">
+				<property name="$metaclass" value="containedNode"/>
+				<participant referencedUin="design:node:::a6k48rkuv1jbkp-fm3sga:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::fwg7s4las6mrq4cpqhs8:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
 		</node>
 		<node uin="a6k48rkuv1jdx59e1ici">
 			<property name="$metaclass" value="ActivityPartition"/>
@@ -191,11 +183,6 @@
 				<property name="$metaclass" value="containedNode"/>
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::fbmi0ulaqxqhsgocd1i6:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
-			<link uin="ieje0rlaqxt290-1zb19z">
-				<property name="$metaclass" value="containedNode"/>
-				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqxt28y-b5rni9:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 			<link uin="ieje0rlaqxw826-9kyrhs">
 				<property name="$metaclass" value="containedNode"/>
@@ -227,11 +214,6 @@
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4laqy6xn5cfihbf:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
-			<link uin="ieje0rlaqy9bjg9bhfki">
-				<property name="$metaclass" value="containedNode"/>
-				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqy9bje-1obmkd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
-			</link>
 			<link uin="ieje0rlaqz4p49oukmi9">
 				<property name="$metaclass" value="containedNode"/>
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -242,15 +224,15 @@
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
 				<participant referencedUin="design:node:::8tcdqylaqz53ocet2y37:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
-			<link uin="ieje0rlaqzec9f-otokpe">
+			<link uin="ieje0rlas74x9ecmgkpk">
 				<property name="$metaclass" value="containedNode"/>
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-5vj00plaqzec9ebriyu2:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las74x9d-fa1afz:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
-			<link uin="ieje0rlaqzptjz-ujxtcl">
+			<link uin="ieje0rlas75g3e-yn1ex">
 				<property name="$metaclass" value="containedNode"/>
 				<participant referencedUin="design:node:::a6k48rkuv1jdx59e1ici:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-qbjze4laqzptjw-bk0ftp:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las75g3d-k23xwm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="88joqslaqw2g3g-bvlblm">
@@ -312,19 +294,19 @@
 		<node uin="lfk9malaqxqcx7402iwc">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Beide Spieler bekommen selbe Frage"/>
-			<link uin="ieje0rlaqxu8cwmepqdg">
+			<link uin="ieje0rlas7532v-3olnan">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::lfk9malaqxqcx7402iwc:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqxt28y-b5rni9:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las74x9d-fa1afz:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="fbmi0ulaqxqhsgocd1i6">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Beide Spieler bekommen unterschiedliche Fragen"/>
-			<link uin="ieje0rlaqxufvf2mevp0">
+			<link uin="ieje0rlas750c89214gn">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::fbmi0ulaqxqhsgocd1i6:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqxt28y-b5rni9:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las74x9d-fa1afz:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4laqxw823-n2n6jp">
@@ -355,10 +337,10 @@
 		<node uin="-qbjze4laqy0h2xptk3ih">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Herausforderer verliert"/>
-			<link uin="ieje0rlaqy9k7t-1j21xm">
+			<link uin="ieje0rlas75nipynrg9">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4laqy0h2xptk3ih:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqy9bje-1obmkd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las75g3d-k23xwm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="l011u0laqy4vl5-exp8a4">
@@ -393,19 +375,19 @@
 		<node uin="-qbjze4laqy5x6iu0ieez">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Spieler mit korrekter Antwort gewinnt"/>
-			<link uin="ieje0rlaqy9m8i-2mrguc">
+			<link uin="ieje0rlas75lgk-1fr08o">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4laqy5x6iu0ieez:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqy9bje-1obmkd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las75g3d-k23xwm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4laqy6xn5cfihbf">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="Spieler mit falscher Antwort verliert"/>
-			<link uin="ieje0rlaqy9oa5-yua35j">
+			<link uin="ieje0rlas75jbm-o1se6d">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4laqy6xn5cfihbf:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-fdk6dylaqy9bje-1obmkd:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::sbhn20las75g3d-k23xwm:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 		<node uin="-qbjze4laqybtrtwlbvkq">
@@ -503,10 +485,6 @@
 				<participant referencedUin="design:node:::sbhn20laqzoyht-w5klhz:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
-		<node uin="-5vj00plaqzec9ebriyu2">
-			<property name="$metaclass" value="ActivityFinalNode20"/>
-			<property name="$name" value="ActivityFinalNode20"/>
-		</node>
 		<node uin="sbhn20laqzo65mubc9dq">
 			<property name="$metaclass" value="MergeNode20"/>
 			<property name="$name" value="MergeNode20"/>
@@ -525,13 +503,35 @@
 				<participant referencedUin="design:node:::-qbjze4laqysq5dahn2wc:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
-		<node uin="-qbjze4laqzptjw-bk0ftp">
+		<node uin="r4d75ylas6mpzi-83pn1f">
 			<property name="$metaclass" value="Action20"/>
 			<property name="$name" value="GUI aktualisieren"/>
-			<link uin="ieje0rlaqzqhix-7211b5">
+			<link uin="a5oojlas6mpzid354k1">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<participant referencedUin="design:node:::-qbjze4laqzptjw-bk0ftp:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
-				<participant referencedUin="design:node:::-5vj00plaqzec9ebriyu2:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+				<participant referencedUin="design:node:::r4d75ylas6mpzi-83pn1f:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::fwg7s4las6mrq4cpqhs8:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="fwg7s4las6mrq4cpqhs8">
+			<property name="$metaclass" value="ActivityFinalNode20"/>
+			<property name="$name" value="ActivityFinalNode20"/>
+		</node>
+		<node uin="sbhn20las74x9d-fa1afz">
+			<property name="$metaclass" value="MergeNode20"/>
+			<property name="$name" value="MergeNode22"/>
+			<link uin="ieje0rlas7551ctgc302">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::sbhn20las74x9d-fa1afz:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4laqxw823-n2n6jp:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
+			</link>
+		</node>
+		<node uin="sbhn20las75g3d-k23xwm">
+			<property name="$metaclass" value="MergeNode20"/>
+			<property name="$name" value="MergeNode23"/>
+			<link uin="ieje0rlas760dj9ueter">
+				<property name="$metaclass" value="ControlFlow20"/>
+				<participant referencedUin="design:node:::sbhn20las75g3d-k23xwm:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
+				<participant referencedUin="design:node:::-qbjze4laqybtrtwlbvkq:-46k66rkuv1j3pd3c08w1" role="Supplier"></participant>
 			</link>
 		</node>
 	</node>
