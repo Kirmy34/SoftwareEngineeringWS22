@@ -5,10 +5,109 @@
 	<view uin="V1hexuhkmtaxw3p3es7mc">
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="objects"/>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Class1">
-			<property name="bounds" value="75,35,80,80"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.WissensStreiter">
+			<property name="bounds" value="955,535,287,118"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.WissensStreiter:owner">
+				<property name="sourceAnchor" value="1090,540"/>
+				<property name="targetAnchor" value="1090,458"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Feld">
+			<property name="bounds" value="1310,535,236,118"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Feld:nachbarn">
+				<property name="sourceAnchor" value="1551,654"/>
+				<property name="targetAnchor" value="1546,658"/>
+				<property name="bendpoints" value="1581,654,1581,688,1546,688"/>
+				<property name="smooth_bendpoints" value="1581,654,1581,688,1546,688"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Feld:wissensstreiter">
+				<property name="sourceAnchor" value="1315,599"/>
+				<property name="targetAnchor" value="1247,599"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragenkarte">
+			<property name="bounds" value="100,498,341,341"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:e_field:src:Analyse.ObjectModel.Fragenkarte.fragen">
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.SpielBrett">
+			<property name="bounds" value="1310,252,236,183"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.SpielBrett:felder">
+				<property name="sourceAnchor" value="1410,440"/>
+				<property name="targetAnchor" value="1410,540"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Duell">
+			<property name="bounds" value="515,256,380,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:attacker">
+				<property name="sourceAnchor" value="900,451"/>
+				<property name="targetAnchor" value="960,451"/>
+			</reference>
+			<reference referencedUin="jdt:e_field:src:Analyse.ObjectModel.Duell.kategorie">
+				<property name="bounds" value="107,170,0,0"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:defender">
+				<property name="sourceAnchor" value="900,443"/>
+				<property name="targetAnchor" value="960,443"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
+				<property name="sourceAnchor" value="520,392"/>
+				<property name="targetAnchor" value="446,392"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="955,255,287,198"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="collapsedCompartments" value=""/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:figuren">
+				<property name="sourceAnchor" value="1082,458"/>
+				<property name="targetAnchor" value="1082,540"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenskategorie">
+			<property name="bounds" value="115,255,326,162"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:e_field:src:Analyse.ObjectModel.Wissenskategorie.name">
+				<property name="bounds" value="59,89,0,0"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Frage">
+			<property name="$shortcutReference" value="true"/>
+			<property name="bounds" value="100,895,341,181"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:node:::1g64ylavbybuvx5kmwm">
+			<property name="bounds" value="375,635,181,121"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:link:::ieje0rlavbz2amo2b9bb:1g64ylavbybuvx5kmwm">
+				<property name="sourceAnchor" value="413,761"/>
+				<property name="targetAnchor" value="413,844"/>
+				<property name="bendpoints" value=""/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

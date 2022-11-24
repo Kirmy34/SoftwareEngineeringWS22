@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<node uin="1g64ylavbybuvx5kmwm">
+		<property name="$metaclass" value="Note"/>
+		<property name="$note_text" value="Schwierigkeit der Fragen ist der Index des fragenArrays&#10;"/>
+		<link uin="ieje0rlavbz2amo2b9bb">
+			<property name="$metaclass" value="Note Link"/>
+			<participant referencedUin="design:node:::1g64ylavbybuvx5kmwm" role="Client"></participant>
+			<participant referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragenkarte" role="Supplier"></participant>
+		</link>
+	</node>
+</nodeSet>

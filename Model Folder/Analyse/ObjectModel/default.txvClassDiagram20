@@ -7,33 +7,19 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V1hexuhkmtaxw3p3es7mc">
-			<property name="bounds" value="195,15,110,74"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Class1">
-			<property name="bounds" value="5,5,80,80"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
-			<property name="bounds" value="75,675,287,281"/>
+			<property name="bounds" value="35,15,161,121"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<property name="collapsedCompartments" value=""/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spiel">
-			<property name="bounds" value="95,155,360,220"/>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Spieler">
+			<property name="bounds" value="75,935,287,281"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spiel:brett">
-				<property name="sourceAnchor" value="460,270"/>
-				<property name="targetAnchor" value="880,270"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spiel:spielerAmZug">
-				<property name="sourceAnchor" value="238,380"/>
-				<property name="targetAnchor" value="238,680"/>
-			</reference>
-			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Spiel.wuefeln:wuefeln">
-				<property name="bounds" value="87,54,0,0"/>
+			<property name="collapsedCompartments" value=""/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Spieler:figuren">
+				<property name="sourceAnchor" value="367,982"/>
+				<property name="targetAnchor" value="459,982"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.SpielBrett">
@@ -43,32 +29,69 @@
 			<property name="collapsedCompartments" value=""/>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.SpielBrett:felder">
 				<property name="sourceAnchor" value="964,500"/>
-				<property name="targetAnchor" value="964,680"/>
+				<property name="targetAnchor" value="964,940"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.WissensStreiter">
-			<property name="bounds" value="454,675,321,321"/>
+			<property name="bounds" value="454,935,321,321"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.WissensStreiter:owner">
-				<property name="sourceAnchor" value="459,730"/>
-				<property name="targetAnchor" value="367,730"/>
+				<property name="sourceAnchor" value="459,990"/>
+				<property name="targetAnchor" value="367,990"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Feld">
-			<property name="bounds" value="855,675,361,281"/>
+			<property name="bounds" value="855,935,361,281"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Feld:nachbarn">
-				<property name="sourceAnchor" value="1221,957"/>
-				<property name="targetAnchor" value="1216,961"/>
-				<property name="bendpoints" value="1251,957,1251,991,1216,991"/>
-				<property name="smooth_bendpoints" value="1251,957,1251,991,1216,991"/>
+				<property name="sourceAnchor" value="1221,1217"/>
+				<property name="targetAnchor" value="1216,1221"/>
+				<property name="bendpoints" value="1251,1217,1251,1251,1216,1251"/>
+				<property name="smooth_bendpoints" value="1251,1217,1251,1251,1216,1251"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Feld:wissensstreiter">
-				<property name="sourceAnchor" value="860,910"/>
-				<property name="targetAnchor" value="780,910"/>
+				<property name="sourceAnchor" value="860,1170"/>
+				<property name="targetAnchor" value="780,1170"/>
 			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Duell">
+			<property name="bounds" value="335,555,380,221"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:attacker">
+				<property name="sourceAnchor" value="353,781"/>
+				<property name="targetAnchor" value="353,940"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:defender">
+				<property name="sourceAnchor" value="345,781"/>
+				<property name="targetAnchor" value="345,940"/>
+			</reference>
+			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Duell.Duell:Duell~QSpieler;~QSpieler;">
+				<property name="bounds" value="107,170,0,0"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
+				<property name="sourceAnchor" value="720,690"/>
+				<property name="targetAnchor" value="1318,690"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Wissenskategorie">
+			<property name="bounds" value="1313,675,226,260"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Wissenskategorie.getRandomFragenkarte:getRandomFragenkarte">
+				<property name="bounds" value="59,89,0,0"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragenkarte">
+			<property name="bounds" value="1265,415,321,191"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Frage">
+			<property name="bounds" value="215,-3,138,107"/>
+			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
 </nodeSet>

@@ -6,6 +6,8 @@ import java.awt.Color;
 public class Spieler {
 
 
+
+	private WissensStreiter[] figuren;
 	private int[] wissensStand;
 	private String name;
 	private Color farbe;
