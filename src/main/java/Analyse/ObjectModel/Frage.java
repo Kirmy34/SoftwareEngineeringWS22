@@ -7,8 +7,6 @@ public class Frage {
 
 	private HashMap antworten;
 
-
-
 	public String[] getAntworten() {
 		//Commented automatically
 		//return;
