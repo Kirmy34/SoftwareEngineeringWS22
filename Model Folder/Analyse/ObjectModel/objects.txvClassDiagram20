@@ -15,10 +15,10 @@
 				<property name="targetAnchor" value="820,679"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.WissensStreiter:owner">
-					<property name="bounds" value="823,809,22,19"/>
+					<property name="bounds" value="823,804,26,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.WissensStreiter:owner">
-					<property name="bounds" value="823,680,10,19"/>
+					<property name="bounds" value="823,685,12,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -31,10 +31,10 @@
 				<property name="sourceAnchor" value="1040,880"/>
 				<property name="targetAnchor" value="901,880"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Feld:occupied">
-					<property name="bounds" value="1020,858,10,19"/>
+					<property name="bounds" value="1018,853,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Feld:occupied">
-					<property name="bounds" value="911,858,22,19"/>
+					<property name="bounds" value="911,853,26,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -48,10 +48,10 @@
 				<property name="sourceAnchor" value="112,917"/>
 				<property name="targetAnchor" value="112,980"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Fragenkarte:fragen">
-					<property name="bounds" value="115,918,10,19"/>
+					<property name="bounds" value="115,905,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Fragenkarte:fragen">
-					<property name="bounds" value="115,951,10,19"/>
+					<property name="bounds" value="115,946,12,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -71,10 +71,10 @@
 				<property name="sourceAnchor" value="1340,842"/>
 				<property name="targetAnchor" value="1276,842"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.SpielBrett:lnkFeld">
-					<property name="bounds" value="1320,820,10,19"/>
+					<property name="bounds" value="1318,815,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.SpielBrett:lnkFeld">
-					<property name="bounds" value="1286,820,9,19"/>
+					<property name="bounds" value="1286,815,10,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -88,10 +88,10 @@
 				<property name="targetAnchor" value="760,620"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:attacker">
-					<property name="bounds" value="650,598,10,19"/>
+					<property name="bounds" value="650,593,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:attacker">
-					<property name="bounds" value="740,598,10,19"/>
+					<property name="bounds" value="738,593,12,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:e_field:src:Analyse.ObjectModel.Duell.kategorie">
@@ -102,20 +102,20 @@
 				<property name="targetAnchor" value="760,580"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:defender">
-					<property name="bounds" value="740,558,10,19"/>
+					<property name="bounds" value="738,553,12,24"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:defender">
-					<property name="bounds" value="650,558,10,19"/>
+					<property name="bounds" value="650,553,12,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
 				<property name="sourceAnchor" value="400,612"/>
 				<property name="targetAnchor" value="281,612"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
-					<property name="bounds" value="369,590,21,19"/>
+					<property name="bounds" value="366,585,24,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
-					<property name="bounds" value="291,590,10,19"/>
+					<property name="bounds" value="291,585,12,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -140,7 +140,7 @@
 				<property name="sourceAnchor" value="149,642"/>
 				<property name="targetAnchor" value="149,720"/>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.Wissenskategorie:lnkFragenkarte">
-					<property name="bounds" value="152,691,21,19"/>
+					<property name="bounds" value="152,686,24,24"/>
 				</reference>
 			</reference>
 		</reference>
@@ -169,10 +169,10 @@
 				<property name="sourceAnchor" value="1020,591"/>
 				<property name="targetAnchor" value="981,591"/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.StartFeld:owner">
-					<property name="bounds" value="1049,489,10,19"/>
+					<property name="bounds" value="1047,484,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.StartFeld:owner">
-					<property name="bounds" value="991,569,10,19"/>
+					<property name="bounds" value="991,564,12,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_gnt:src:Analyse.ObjectModel.StartFeld:Feld">
@@ -190,23 +190,10 @@
 				<property name="targetAnchor" value="853,481"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkSpieler">
-					<property name="bounds" value="856,322,10,19"/>
+					<property name="bounds" value="856,327,12,24"/>
 				</reference>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkSpieler">
-					<property name="bounds" value="856,452,22,19"/>
-				</reference>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
-				<property name="sourceAnchor" value="400,280"/>
-				<property name="targetAnchor" value="240,480"/>
-				<property name="bendpoints" value="240,280"/>
-				<property name="smooth_bendpoints" value="240,280"/>
-				<property name="location_set_by_user" value="true"/>
-				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
-					<property name="bounds" value="380,258,10,19"/>
-				</reference>
-				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
-					<property name="bounds" value="243,451,21,19"/>
+					<property name="bounds" value="856,447,26,24"/>
 				</reference>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:spielFeld">
@@ -216,10 +203,23 @@
 				<property name="smooth_bendpoints" value="1380,280"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:spielFeld">
-					<property name="bounds" value="1383,753,10,19"/>
+					<property name="bounds" value="1383,748,12,24"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:spielFeld">
-					<property name="bounds" value="931,258,10,19"/>
+					<property name="bounds" value="931,253,12,24"/>
+				</reference>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
+				<property name="sourceAnchor" value="400,280"/>
+				<property name="targetAnchor" value="240,480"/>
+				<property name="bendpoints" value="240,280"/>
+				<property name="smooth_bendpoints" value="240,280"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="label:clientCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
+					<property name="bounds" value="378,253,12,24"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:jdt:l_ast:src:Analyse.ObjectModel.IWWWDNW:lnkWissenskategorie">
+					<property name="bounds" value="243,446,24,24"/>
 				</reference>
 			</reference>
 		</reference>
