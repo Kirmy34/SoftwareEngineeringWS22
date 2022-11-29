@@ -1,13 +1,14 @@
+
 package Analyse.ObjectModel;
+
 public class StartFeld extends Feld {
 
 
-	
 	/**
 	 * @clientCardinality 2
 	 * @link aggregation
-	 * @supplierCardinality 1
+	 * @supplierCardinality 1 
 	 */
-	
-	private Spieler owner;
+	private Analyse.ObjectModel.Spieler lnkSpieler;
+
 }

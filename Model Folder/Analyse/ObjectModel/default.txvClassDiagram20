@@ -54,9 +54,6 @@
 				<property name="sourceAnchor" value="345,781"/>
 				<property name="targetAnchor" value="345,940"/>
 			</reference>
-			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Duell.Duell:Duell~QSpieler;~QSpieler;">
-				<property name="bounds" value="107,170,0,0"/>
-			</reference>
 			<reference referencedUin="jdt:l_ast:src:Analyse.ObjectModel.Duell:kategorie">
 				<property name="sourceAnchor" value="720,690"/>
 				<property name="targetAnchor" value="1318,690"/>
@@ -66,9 +63,6 @@
 			<property name="bounds" value="1313,675,226,260"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
-			<reference referencedUin="jdt:e_method:src:Analyse.ObjectModel.Wissenskategorie.getRandomFragenkarte:getRandomFragenkarte">
-				<property name="bounds" value="59,89,0,0"/>
-			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Analyse.ObjectModel.Fragenkarte">
 			<property name="bounds" value="1265,415,321,191"/>
