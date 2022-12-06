@@ -666,7 +666,7 @@
 		</node>
 		<node uin="-qbjze4laqysq5dahn2wc">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Wissenstandszeiger um 1 erniedrigen"/>
+			<property name="$name" value="Wissenstandszeiger Verlierer -1"/>
 			<link uin="ieje0rlaqzloysz36wch">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4laqysq5dahn2wc:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -684,7 +684,7 @@
 		</node>
 		<node uin="-qbjze4laqz1fahxd6p25">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Wissenstandzeiger +1"/>
+			<property name="$name" value="Wissenstandzeiger Sieger +1"/>
 			<link uin="ieje0rlaqzljjq-1kfs2o">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::-qbjze4laqz1fahxd6p25:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
@@ -718,7 +718,7 @@
 		</node>
 		<node uin="8tcdqylaqz53ocet2y37">
 			<property name="$metaclass" value="Action20"/>
-			<property name="$name" value="Sieger bestimmt ggf. Kategorie, in der der Spieler abzug bekommt"/>
+			<property name="$name" value="Sieger bestimmt ggf. Kategorie, in der der Verlierer Abzug bekommt"/>
 			<link uin="ieje0rlaqzp71ks5yjnc">
 				<property name="$metaclass" value="ControlFlow20"/>
 				<participant referencedUin="design:node:::8tcdqylaqz53ocet2y37:-46k66rkuv1j3pd3c08w1" role="Client"></participant>
