@@ -10,24 +10,39 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::gj7tthlbf8doxb-mbqzm4:8krugmkuv2ffrn-masrr5">
+				<property name="bounds" value="76,138,100,26"/>
+				<property name="location_set_by_user" value="true"/>
+			</reference>
 			<reference referencedUin="design:node:::gj7tthkuv2fmorqbev6b:8krugmkuv2ffrn-masrr5">
-				<property name="bounds" value="96,58,100,27"/>
+				<property name="bounds" value="76,58,100,26"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::8bho0jkuv2fhtn2udndy">
-			<property name="bounds" value="55,135,50,92"/>
+			<property name="bounds" value="55,135,50,91"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="design:link:::ieje0rkuv2fppg-go1dpy:8bho0jkuv2fhtn2udndy">
 				<property name="sourceAnchor" value="110,173"/>
-				<property name="targetAnchor" value="320,173"/>
+				<property name="targetAnchor" value="300,173"/>
 				<property name="bendpoints" value=""/>
 				<reference referencedUin="label:supplierCardinality:design:link:::ieje0rkuv2fppg-go1dpy:8bho0jkuv2fhtn2udndy">
-					<property name="bounds" value="299,150,11,20"/>
+					<property name="bounds" value="280,151,10,19"/>
 				</reference>
 				<reference referencedUin="label:clientCardinality:design:link:::ieje0rkuv2fppg-go1dpy:8bho0jkuv2fhtn2udndy">
-					<property name="bounds" value="120,150,11,20"/>
+					<property name="bounds" value="120,151,10,19"/>
+				</reference>
+			</reference>
+			<reference referencedUin="design:link:::ieje0rlbf8dz8h-hxrrkl:8bho0jkuv2fhtn2udndy">
+				<property name="sourceAnchor" value="110,192"/>
+				<property name="targetAnchor" value="314,243"/>
+				<property name="bendpoints" value=""/>
+				<reference referencedUin="label:clientCardinality:design:link:::ieje0rlbf8dz8h-hxrrkl:8bho0jkuv2fhtn2udndy">
+					<property name="bounds" value="120,172,10,19"/>
+				</reference>
+				<reference referencedUin="label:supplierCardinality:design:link:::ieje0rlbf8dz8h-hxrrkl:8bho0jkuv2fhtn2udndy">
+					<property name="bounds" value="304,219,10,19"/>
 				</reference>
 			</reference>
 		</reference>
