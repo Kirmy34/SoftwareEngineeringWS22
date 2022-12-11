@@ -31,14 +31,14 @@
 				<property name="bounds" value="56,5,20,20"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$name:design:node:::-amcqg9lbjgwflrm9idhq:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="4,30,12,15"/>
+					<property name="bounds" value="-12,30,44,15"/>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::-amcqg9lbjgwjn4-le0abp:ba089nlbjg4rm5-22mdcu">
 				<property name="bounds" value="216,5,20,20"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$name:design:node:::-amcqg9lbjgwjn4-le0abp:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="0,30,21,15"/>
+					<property name="bounds" value="-3,30,27,15"/>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::ba089nlbjgmj0x-9zri6v:ba089nlbjg4rm5-22mdcu">
@@ -54,7 +54,7 @@
 				<property name="bounds" value="106,-7,14,14"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="-16,24,47,15"/>
+					<property name="bounds" value="-28,24,71,15"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgjywa-tx12h9:-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
 					<property name="sourceAnchor" value="-19,317"/>
@@ -78,15 +78,15 @@
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
-				<property name="bounds" value="16,45,100,60"/>
+				<property name="bounds" value="56,65,100,60"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:link:::ieje0rlbjgwtdhphbwzh:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
-					<property name="sourceAnchor" value="-70,400"/>
+					<property name="sourceAnchor" value="-70,420"/>
 					<property name="targetAnchor" value="-70,380"/>
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgzgnm-5zg8xv:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
-					<property name="sourceAnchor" value="-20,439"/>
+					<property name="sourceAnchor" value="20,439"/>
 					<property name="targetAnchor" value="400,439"/>
 					<property name="bendpoints" value=""/>
 				</reference>
