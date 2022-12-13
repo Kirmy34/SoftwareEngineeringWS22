@@ -15,10 +15,42 @@
 			<participant referencedUin="design:node:::ba089nkuv24g8i-v5h0b7" role="Client"></participant>
 			<participant referencedUin="jdt:e_class:src:Design.Components.Duell" role="Supplier"></participant>
 		</link>
+		<node uin="-vedwtdlbmcw941-g2utdr">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="Port1"/>
+			<link uin="ieje0rlbmcwukgabxw76">
+				<property name="$metaclass" value="RequiredInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmcw941-g2utdr:ba089nkuv24g8i-v5h0b7" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Subjekt" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlbmcyrzk-osrq4h">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmcw941-g2utdr:ba089nkuv24g8i-v5h0b7" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Observer" role="Supplier"></participant>
+			</link>
+		</node>
 	</node>
 	<node uin="ba089nlbjg4rm5-22mdcu">
 		<property name="$metaclass" value="Component20"/>
 		<property name="$name" value="Logic"/>
+		<node uin="-vedwtdlbmcslly35fcyw">
+			<property name="$metaclass" value="Port20"/>
+			<property name="isService" value="true"/>
+			<property name="visibility" value="public"/>
+			<property name="$name" value="mvc"/>
+			<link uin="ieje0rlbmcv2xg-dtvjm7">
+				<property name="$metaclass" value="ProvidedInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Subjekt" role="Supplier"></participant>
+			</link>
+			<link uin="ieje0rlbmcyw2oft3wjo">
+				<property name="$metaclass" value="RequiredInterface20"/>
+				<participant referencedUin="design:node:::-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu" role="Client"></participant>
+				<participant referencedUin="jdt:e_class:src:Design.Components.Observer" role="Supplier"></participant>
+			</link>
+		</node>
 		<node uin="-vedwtdlbjgf6bm-yn2lln">
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>

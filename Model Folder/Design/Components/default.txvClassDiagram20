@@ -7,8 +7,36 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:view:::V-oyrl70kuv21ga7-ing4t2">
-			<property name="bounds" value="115,15,142,90"/>
+			<property name="bounds" value="115,15,170,251"/>
 			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Duell">
+			<property name="bounds" value="5,5,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Duell">
+				<property name="bounds" value="-7,30,35,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Spielzug">
+			<property name="bounds" value="44,-4,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Spielzug">
+				<property name="bounds" value="-18,30,57,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Subjekt">
+			<property name="bounds" value="44,35,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Subjekt">
+				<property name="bounds" value="-14,30,49,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:Design.Components.Observer">
+			<property name="bounds" value="15,44,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Observer">
+				<property name="bounds" value="-19,30,59,20"/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

@@ -11,7 +11,7 @@
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="design:view:::rwrrivlbjhyqdg4zi39j">
-			<property name="bounds" value="5,105,80,75"/>
+			<property name="bounds" value="5,105,84,88"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

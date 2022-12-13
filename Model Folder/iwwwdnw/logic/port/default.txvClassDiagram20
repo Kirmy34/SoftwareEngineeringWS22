@@ -7,8 +7,25 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
-			<property name="bounds" value="5,5,104,80"/>
+			<property name="bounds" value="5,5,20,20"/>
 			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
+				<property name="bounds" value="-36,30,92,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Subject">
+			<property name="bounds" value="44,-4,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Subject">
+				<property name="bounds" value="-14,30,49,20"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Observer">
+			<property name="bounds" value="44,35,20,20"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Observer">
+				<property name="bounds" value="-19,30,59,20"/>
+			</reference>
 		</reference>
 	</view>
 </nodeSet>

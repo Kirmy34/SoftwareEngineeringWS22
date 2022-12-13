@@ -7,7 +7,35 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.Main">
-			<property name="bounds" value="55,35,200,89"/>
+			<property name="bounds" value="55,35,190,80"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkuv44met6q84ga">
+			<property name="bounds" value="264,183,80,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.SampleTest">
+			<property name="bounds" value="5,5,200,174"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhkuv22v5c-onvyq6">
+			<property name="bounds" value="264,-4,97,168"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::wzpyeglbjhyqo7kfyfvw">
+			<property name="bounds" value="399,123,97,108"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhlbjhufwq-z1airn">
+			<property name="bounds" value="399,-4,97,108"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhlbjhkonon2ur92">
+			<property name="bounds" value="66,198,97,108"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::7l09dwlbjhyv1i-qual1y">
+			<property name="bounds" value="165,198,97,108"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

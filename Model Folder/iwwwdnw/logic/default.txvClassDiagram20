@@ -5,5 +5,14 @@
 	<view uin="V1hexuhlbjhufwq-z1airn">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="design:view:::V1hexuhlbjhw71s-yz25hj">
+			<property name="bounds" value="5,5,80,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhlbjhw2as-g5sqy0">
+			<property name="bounds" value="5,105,120,128"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>
