@@ -7,7 +7,7 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.port.Spielzug">
-			<property name="bounds" value="5,5,80,80"/>
+			<property name="bounds" value="5,5,96,80"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

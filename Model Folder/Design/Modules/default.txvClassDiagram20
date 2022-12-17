@@ -5,5 +5,9 @@
 	<view uin="cyd157kmt92zey-25lt59">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<reference referencedUin="design:view:::V1hexuhkuv26tyt-gtwkw4">
+			<property name="bounds" value="5,125,87,60"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
 	</view>
 </nodeSet>

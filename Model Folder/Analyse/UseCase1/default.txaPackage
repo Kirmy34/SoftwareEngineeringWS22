@@ -703,13 +703,13 @@
 			<property name="$name" value="DecisionNode27"/>
 			<link uin="ieje0rlapfcax6-h6xgbd">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="[nein]"/>
+				<property name="label" value="[ja]"/>
 				<participant referencedUin="design:node:::l7v8clapfbggcv02ixz:-46k66rkuv1egth-yezd2c" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lapfbslgm3s5p1:-46k66rkuv1egth-yezd2c" role="Supplier"></participant>
 			</link>
 			<link uin="ieje0rlapfdjac62f3zx">
 				<property name="$metaclass" value="ControlFlow20"/>
-				<property name="label" value="[ja]"/>
+				<property name="label" value="[nein]"/>
 				<participant referencedUin="design:node:::l7v8clapfbggcv02ixz:-46k66rkuv1egth-yezd2c" role="Client"></participant>
 				<participant referencedUin="design:node:::-qbjze4lapfd3zf-tsr6dx:-46k66rkuv1egth-yezd2c" role="Supplier"></participant>
 			</link>
