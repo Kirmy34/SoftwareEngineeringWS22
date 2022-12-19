@@ -1,9 +1,12 @@
 package iwwwdnw.spielzug.port;
-public interface Spielzug {
 
+import Analyse.ObjectModel.WissensStreiter;
 
-	void method1();
-	
-	
+public interface Spielzug 
+{
+	public int wuerfeln();
+	public void wissensstreiterBewegen(WissensStreiter wissensstreiter);
+	public void vomHeimZumStartfeld(WissensStreiter wissensstreiter);
+
 	
 }

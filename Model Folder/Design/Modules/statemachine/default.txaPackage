@@ -31,7 +31,7 @@
 						<property name="$metaclass" value="PseudoState20"/>
 						<property name="$name" value="Initial1"/>
 						<property name="$kind" value="initial"/>
-						<link uin="ieje0rlbs2mpcrgobimi">
+						<link uin="ieje0rlbuuvqz2-ttgwak">
 							<property name="$metaclass" value="TransitionLink20"/>
 							<participant referencedUin="design:node:::k9ofrlkuv29p4iodf10o:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
 							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
@@ -44,43 +44,35 @@
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
 						</node>
-						<link uin="ieje0rlbs08ru6-20esux">
+						<link uin="ieje0rlbuus7gm-8aml2">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="label" value="[Spieler hat auf Würfeln geklickt]/wuerfeln()"/>
+							<property name="label" value="[alle Spieler haben aufgegeben]"/>
 							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs08h5h4w4daz:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+							<participant referencedUin="design:node:::-3uf15dkuv28lc36ajvln:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-					</node>
-					<node uin="-3uf15dlbs08h5h4w4daz">
-						<property name="$metaclass" value="State20"/>
-						<property name="$name" value="check"/>
-						<node uin="-acitv2lbs08h5h-u5uijq">
-							<property name="$metaclass" value="Region20"/>
-							<property name="$name" value="Region20"/>
-						</node>
-						<link uin="ieje0rlbs2ey9b-61f7l5">
-							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="label" value="[7 und min. 1 Figur auf Heimatfeld]/vonHeimZumStartfeld(wissensstreiter)"/>
-							<participant referencedUin="design:node:::-3uf15dlbs08h5h4w4daz:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
-							<participant referencedUin="design:node:::-3uf15dlbs0q3t7fvf802:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
-						</link>
-						<link uin="ieje0rlbs2hw0orp2hxn">
+						<link uin="ieje0rlbuv1xww-ssrmyw">
 							<property name="$metaclass" value="TransitionLink20"/>
 							<property name="label" value="[nicht auf Spielbrett und keine 7]"/>
-							<participant referencedUin="design:node:::-3uf15dlbs08h5h4w4daz:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
 							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs2i7bn-jswyje">
+						<link uin="ieje0rlbuv2k4e-ff2ts8">
 							<property name="$metaclass" value="TransitionLink20"/>
-							<property name="label" value="[3 mal gewürfelt keine 7]"/>
-							<participant referencedUin="design:node:::-3uf15dlbs08h5h4w4daz:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<property name="label" value="[3 mal gewürfelt keine 7 oder Aufgabe]"/>
+							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
 							<participant referencedUin="design:node:::cfz0n8lbs2l8lek8xoqn:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
-						<link uin="ieje0rlbs43ndozdty6q">
+						<link uin="ieje0rlbuv3303-iprs82">
 							<property name="$metaclass" value="TransitionLink20"/>
 							<property name="label" value="[sonst]/wissensstreiterBewegen(wissensstreiter)"/>
-							<participant referencedUin="design:node:::-3uf15dlbs08h5h4w4daz:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
 							<participant referencedUin="design:node:::-3uf15dlbs2nmgncpsay2:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
+						</link>
+						<link uin="ieje0rlbuv3ygb79nt2u">
+							<property name="$metaclass" value="TransitionLink20"/>
+							<property name="label" value="[7 und min. 1 Figur auf Heimatfeld]/vonHeimZumStartfeld(wissensstreiter)"/>
+							<participant referencedUin="design:node:::-3uf15dlbs005n0uwh6wv:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Client"></participant>
+							<participant referencedUin="design:node:::-3uf15dlbs0q3t7fvf802:-acitv2kuv28cj8xnokyk:-3uf15dkuv28cj7ibp0zj:-acitv2kuv27uzo-yj46u:j8ctxykuv27uznyzfuoh" role="Supplier"></participant>
 						</link>
 					</node>
 					<node uin="-3uf15dlbs0q3t7fvf802">
@@ -98,7 +90,7 @@
 					</node>
 					<node uin="-3uf15dlbs2nmgncpsay2">
 						<property name="$metaclass" value="State20"/>
-						<property name="$name" value="check"/>
+						<property name="$name" value="Bewegen"/>
 						<node uin="-acitv2lbs2nmgnzg2omn">
 							<property name="$metaclass" value="Region20"/>
 							<property name="$name" value="Region20"/>
