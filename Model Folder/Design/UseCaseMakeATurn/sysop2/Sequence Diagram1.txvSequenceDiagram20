@@ -9,8 +9,27 @@
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="design:node:::-yrgd8ekuv2j372-3bq5sr">
 			<property name="$shortcutReference" value="true"/>
-			<property name="bounds" value="5,5,104,50"/>
+			<property name="bounds" value="5,5,991,871"/>
 			<property name="location_set_by_user" value="true"/>
+			<property name="bounds_setted_by_user" value="true"/>
+			<reference referencedUin="design:node:::l2gqtvlcgb0hs1-g1wqyn:-yrgd8ekuv2j372-3bq5sr">
+				<property name="bounds" value="105,100,16,16"/>
+				<reference referencedUin="sd20_message_container:design:node:::l2gqtvlcgb0hs1-g1wqyn:-yrgd8ekuv2j372-3bq5sr">
+					<reference referencedUin="sd20_message|1|call|60(design:node:::l2gqtvlcgb0hs1-g1wqyn:-yrgd8ekuv2j372-3bq5sr)">
+						<reference referencedUin="sd20_message_label:sd20_message|1|call|60(design:node:::l2gqtvlcgb0hs1-g1wqyn:-yrgd8ekuv2j372-3bq5sr)">
+						</reference>
+					</reference>
+				</reference>
+			</reference>
+			<reference referencedUin="design:node:::-y8nsowlcgazr1xemlqqu:-yrgd8ekuv2j372-3bq5sr">
+				<property name="bounds" value="145,5,76,370"/>
+				<property name="location_set_by_user" value="true"/>
+				<reference referencedUin="design:node:::c87hzvlcgb0hrvvrvbiy:-y8nsowlcgazr1xemlqqu:-yrgd8ekuv2j372-3bq5sr">
+					<property name="bounds" value="28,43,20,241"/>
+					<property name="location_set_by_user" value="true"/>
+					<property name="bounds_setted_by_user" value="true"/>
+				</reference>
+			</reference>
 		</reference>
 	</view>
 	<link uin="ieje0rkuv2j374-buzal1">

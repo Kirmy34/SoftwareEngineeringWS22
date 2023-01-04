@@ -4,6 +4,27 @@
 <nodeSet  version="1.1">
 	<node uin="-yrgd8ekuv2j372-3bq5sr">
 		<property name="$metaclass" value="SD20_Interaction"/>
-		<property name="$name" value="Interaction"/>
+		<property name="$name" value="wissensstreiterBewegen(wissensstreiter)"/>
+		<node uin="-y8nsowlcgazr1xemlqqu">
+			<property name="$metaclass" value="SD20_Lifeline"/>
+			<property name="$name" value="Lifeline1"/>
+			<property name="connectableElementName" value=":IWWWDNW"/>
+			<node uin="c87hzvlcgb0hrvvrvbiy">
+				<property name="$metaclass" value="SD20_ExecutionSpecification"/>
+				<property name="$name" value="SD20_ExecutionSpecification1"/>
+			</node>
+		</node>
+		<node uin="l2gqtvlcgb0hs1-g1wqyn">
+			<property name="$metaclass" value="SD20_Int_InvocationSpecification"/>
+			<property name="$name" value="SD20_Int_InvocationSpecification1"/>
+			<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvlcgb0hrvvrvbiy:-y8nsowlcgazr1xemlqqu:-yrgd8ekuv2j372-3bq5sr"/>
+			<property name="call_cachedSequenceNumber" value="1"/>
+			<property name="signalOrOperationName" value="wissensstreiterBewegen(wissensstreiter)"/>
+			<node uin="rf4xatlcgb0swl1lcu09">
+				<property name="$metaclass" value="SD20_Int_Message_Argument"/>
+				<property name="$name" value="SD20_Int_Message_Argument1"/>
+				<property name="stringValue" value="wissensstreiter"/>
+			</node>
+		</node>
 	</node>
 </nodeSet>
