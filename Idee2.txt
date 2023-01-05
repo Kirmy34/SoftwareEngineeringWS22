@@ -1,0 +1,97 @@
+public class Spielbrett
+{
+	
+
+	Vector spielBrett = ...;
+	
+
+	Feld felder[];
+
+	StartFelder felder[];
+
+
+	
+
+
+
+}
+
+
+
+
+
+public class Feld
+{
+
+	private WissensStreiter wissensstreiter;
+
+
+
+	public Feld()
+	{
+	}
+
+
+
+	public boolean vonGegnerBesetzt(WissensStreiter wissensstreiter)
+	{
+		
+	}
+
+	public boolean istFrei()
+	{
+		if this.wissensstreiter
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+
+
+
+	public boolean istStartfeld()
+	{
+		if this instanceof StartFeld
+			return true;
+		else
+			return false;
+	}
+
+
+}
+
+
+public class StartFeld
+{
+
+	private Spieler owner;
+
+
+}
+
+
+public class Spieler
+{
+	private WissensStreiter[] wissensstreiter;
+	public Startfeld[] startfelder;
+
+
+
+	public boolean alleStartFelderVonUnsBelegt(){};
+
+
+}
+
+
+
+
+private class WissensStreiter
+{
+
+	private Spieler spieler;
+
+
+}
