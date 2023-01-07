@@ -2,12 +2,12 @@
 
 
 <nodeSet  version="1.1">
-	<view uin="kwqikhlcj9l8oev14iar">
+	<view uin="e8mlqqlclz3ttm-icd06h">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="design:view:::84v1yslcj9l8oe-nfbb6b">
-			<property name="bounds" value="55,35,153,74"/>
+		<reference referencedUin="design:view:::iba5lclclz3ttmbyjduj">
+			<property name="bounds" value="5,5,236,74"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<nodeSet  version="1.1">
+	<view uin="V1hexuhlclz0qwc-gcch7k">
+		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="$name" value="Class Diagram1"/>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.duell.impl.Duell">
+			<property name="bounds" value="15,195,174,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.Feld">
+			<property name="bounds" value="255,195,188,107"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.Feld:wissensstreiter">
+				<property name="sourceAnchor" value="448,230"/>
+				<property name="targetAnchor" value="520,230"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.IWWWDNW">
+			<property name="bounds" value="275,15,200,167"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:duell">
+				<property name="sourceAnchor" value="280,143"/>
+				<property name="targetAnchor" value="178,200"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:feld">
+				<property name="sourceAnchor" value="364,187"/>
+				<property name="targetAnchor" value="364,200"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:wissens">
+				<property name="sourceAnchor" value="480,147"/>
+				<property name="targetAnchor" value="542,180"/>
+			</reference>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:wissensStreiter">
+				<property name="sourceAnchor" value="480,183"/>
+				<property name="targetAnchor" value="520,183"/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.StartFeld">
+			<property name="bounds" value="277,375,195,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+			<reference referencedUin="jdt:l_gnt:src:iwwwdnw.logic.impl.StartFeld:Feld">
+				<property name="sourceAnchor" value="371,380"/>
+				<property name="targetAnchor" value="371,307"/>
+				<property name="bendpoints" value=""/>
+			</reference>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.WissensStreiter">
+			<property name="bounds" value="515,175,200,80"/>
+			<property name="location_set_by_user" value="true"/>
+			<property name="$shortcutReference" value="true"/>
+		</reference>
+	</view>
+</nodeSet>
