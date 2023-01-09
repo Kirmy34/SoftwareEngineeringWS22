@@ -20,7 +20,7 @@ public class IWWWDNW
 	}
 
 
-	public int wuerfeln()
+	public int[] wuerfeln()
 	{
 
 		int rueckgabe[] = new int[2];

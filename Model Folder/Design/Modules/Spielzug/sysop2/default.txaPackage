@@ -244,7 +244,7 @@
 							<property name="$name" value="SD20_Int_InvocationSpecification1"/>
 							<property name="receiveExecutionSpecificationPuin" value="design:node:::c87hzvlcm3yqm3d0858m:7x5rzxlcm3yqlzx4sg94:7x5rzxlcm3yqlv-24wmhy:lxishnlclz3ttuh2d4gc:2c93l4lclz3ttt-ewixqx"/>
 							<property name="call_cachedSequenceNumber" value="1.5"/>
-							<property name="signalOrOperationName" value="startDuell(this.wissensStreiter.getSpieler(), zielfeld.getWissensstreiter().getSpieler()"/>
+							<property name="signalOrOperationName" value="startDuell(this.wissensStreiter.getSpieler(), zielfeld.getWissensstreiter().getSpieler(), wissenskategorie)"/>
 						</node>
 						<link uin="ieje0rlcm3u8uq-1rk23e">
 							<property name="$metaclass" value="SD20_Int_MountingLink"/>

@@ -4,11 +4,19 @@ package iwwwdnw.logic.impl;
 public class Feld {
 
 	
-	private WissensStreiter wissensstreiter;
+	protected WissensStreiter wissensstreiter;
 
 	public boolean vonGegnerBesetzt(WissensStreiter wissensstreiter) {
-		// TODO Auto-generated method stub
-		return false;
+	
+		if(this.wissensstreiter.getSpieler().equals(wissensstreiter.getSpieler()))
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+		
 	}
 
 	public WissensStreiter getWissensstreiter() {

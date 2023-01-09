@@ -4,6 +4,7 @@ import iwwwdnw.duell.impl.Duell;
 public class IWWWDNW {
 
 
+	private Wissenskategorie[] wissenskategorien;
 
 
 	/**
@@ -73,6 +74,14 @@ public class IWWWDNW {
 	public void vomHeimZumStartfeld(WissensStreiter wissensStreiter, StartFeld startFeld)
 	{
 		this.wissensstreiterBewegen(wissensStreiter, null, startFeld);
+	}
+
+	public Wissenskategorie[] getWissenskategorien() {
+		return wissenskategorien;
+	}
+
+	public void setWissenskategorien(Wissenskategorie[] wissenskategorien) {
+		this.wissenskategorien = wissenskategorien;
 	}
 	
 	

@@ -6,12 +6,12 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="Class Diagram1"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.duell.impl.Duell">
-			<property name="bounds" value="15,195,174,80"/>
+			<property name="bounds" value="15,195,174,169"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.Feld">
-			<property name="bounds" value="255,195,188,107"/>
+			<property name="bounds" value="255,195,190,107"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.Feld:wissensstreiter">
@@ -20,7 +20,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.IWWWDNW">
-			<property name="bounds" value="275,15,200,167"/>
+			<property name="bounds" value="275,15,200,198"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:duell">
@@ -28,7 +28,7 @@
 				<property name="targetAnchor" value="178,200"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:feld">
-				<property name="sourceAnchor" value="364,187"/>
+				<property name="sourceAnchor" value="364,20"/>
 				<property name="targetAnchor" value="364,200"/>
 			</reference>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:wissens">
