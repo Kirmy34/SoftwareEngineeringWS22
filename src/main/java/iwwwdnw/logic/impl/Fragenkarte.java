@@ -1,8 +1,8 @@
 package iwwwdnw.logic.impl;
 
-import iwwwdnw.logic.impl.Frage.Level;
+import iwwwdnw.logic.port.Frage;
 
-public class Fragenkarte {
+public class Fragenkarte implements iwwwdnw.logic.port.Fragenkarte{
 	
 	private Frage[] fragen; // 0: leicht, 1: mittel, 2: schwer
 	private boolean used;

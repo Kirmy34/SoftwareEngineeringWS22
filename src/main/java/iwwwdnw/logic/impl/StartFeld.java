@@ -1,6 +1,6 @@
 package iwwwdnw.logic.impl;
 
-public class StartFeld extends Feld {
+public class StartFeld extends Feld implements iwwwdnw.logic.port.StartFeld {
 
 	private Spieler owner;
 

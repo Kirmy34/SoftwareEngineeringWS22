@@ -1,10 +1,11 @@
 
 package iwwwdnw.logic.impl;
 
-public class Feld {
+public class Feld implements iwwwdnw.logic.port.Feld{
 
 	
 	protected WissensStreiter wissensstreiter;
+	private int id;
 
 	public boolean vonGegnerBesetzt(WissensStreiter wissensstreiter) {
 	
@@ -30,6 +31,18 @@ public class Feld {
 	public boolean istFrei()
 	{
 		return this.wissensstreiter == null;
+	}
+
+	@Override
+	public int getId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setId(int id) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

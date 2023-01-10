@@ -2,11 +2,9 @@ package iwwwdnw.logic.impl;
 
 
 
-
-public class Spieler {
+public class Spieler implements iwwwdnw.logic.port.Spieler {
 	
-	public enum Farben { DUNKELROT, ROT, HELLROT, RUBINROT, PASTELLROT, ERDBEERROT, TOMATENROT, LIPPENSTIFTROT, BLUTROT, ROSENROT}
-	
+	private int id;
 	private int alter;
 	private int[] wissensstandsanzeige;
 	private Farben farbe;
@@ -51,6 +49,14 @@ public class Spieler {
 
 	public void setWissensstreiter(WissensStreiter[] wissensstreiter) {
 		this.wissensstreiter = wissensstreiter;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 	

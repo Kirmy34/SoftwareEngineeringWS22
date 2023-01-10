@@ -34,12 +34,12 @@
 				</reference>
 				<reference referencedUin="sd20_message_container:design:node:::tbrkj2lclz3uwqeyfn1:qd8q9flclz3uwn-fj1440">
 					<reference referencedUin="sd20_message|1|reply|57(design:node:::tbrkj2lclz3uwqeyfn1:qd8q9flclz3uwn-fj1440)">
-						<property name="sourceAnchor" value="688,703"/>
-						<property name="targetAnchor" value="628,703"/>
+						<property name="sourceAnchor" value="686,701"/>
+						<property name="targetAnchor" value="628,701"/>
 					</reference>
 					<reference referencedUin="sd20_message|1|call|57(design:node:::tbrkj2lclz3uwqeyfn1:qd8q9flclz3uwn-fj1440)">
-						<property name="sourceAnchor" value="628,177"/>
-						<property name="targetAnchor" value="688,177"/>
+						<property name="sourceAnchor" value="628,175"/>
+						<property name="targetAnchor" value="686,175"/>
 						<reference referencedUin="sd20_message_label:sd20_message|1|call|57(design:node:::tbrkj2lclz3uwqeyfn1:qd8q9flclz3uwn-fj1440)">
 						</reference>
 					</reference>
@@ -59,18 +59,18 @@
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::-y8nsowlcm36ahg-9xv7fv:qd8q9flclz3uwn-fj1440">
-				<property name="bounds" value="835,5,168,683"/>
+				<property name="bounds" value="835,5,162,683"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 			<reference referencedUin="design:node:::-y8nsowlcm377bb65032h:qd8q9flclz3uwn-fj1440">
-				<property name="bounds" value="1155,5,104,683"/>
+				<property name="bounds" value="1155,5,100,683"/>
 				<property name="location_set_by_user" value="true"/>
 			</reference>
 			<reference referencedUin="design:node:::aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440">
-				<property name="bounds" value="555,5,76,683"/>
+				<property name="bounds" value="555,5,72,683"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:node:::79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440">
-					<property name="bounds" value="28,70,30,527"/>
+					<property name="bounds" value="26,70,30,527"/>
 					<property name="location_set_by_user" value="true"/>
 					<property name="bounds_setted_by_user" value="true"/>
 					<reference referencedUin="design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440">
@@ -82,19 +82,19 @@
 						<reference referencedUin="sd20_message_container:design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440">
 							<property name="bounds" value="0,0,0,0"/>
 							<reference referencedUin="sd20_message|1|call|100(design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440)">
-								<property name="sourceAnchor" value="708,356"/>
-								<property name="targetAnchor" value="718,367"/>
-								<property name="bendpoints" value="735,356,735,367"/>
-								<property name="smooth_bendpoints" value="735,356,735,367"/>
+								<property name="sourceAnchor" value="706,354"/>
+								<property name="targetAnchor" value="716,365"/>
+								<property name="bendpoints" value="735,354,735,365"/>
+								<property name="smooth_bendpoints" value="735,354,735,365"/>
 								<reference referencedUin="sd20_message_label:sd20_message|1|call|100(design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440)">
 									<property name="bounds" value="60,0,0,0"/>
 								</reference>
 							</reference>
 							<reference referencedUin="sd20_message|1|reply|100(design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440)">
-								<property name="sourceAnchor" value="718,390"/>
-								<property name="targetAnchor" value="708,404"/>
-								<property name="bendpoints" value="738,390,738,404"/>
-								<property name="smooth_bendpoints" value="738,390,738,404"/>
+								<property name="sourceAnchor" value="716,388"/>
+								<property name="targetAnchor" value="706,402"/>
+								<property name="bendpoints" value="738,388,738,402"/>
+								<property name="smooth_bendpoints" value="738,388,738,402"/>
 								<reference referencedUin="sd20_message_label:sd20_message|1|reply|100(design:node:::gvskd0lcm35ok56wwmtp:79iwz9lclz3uwnfe5y22:aczku0lclz3uwnrznhlp:qd8q9flclz3uwn-fj1440)">
 									<property name="bounds" value="60,0,0,0"/>
 								</reference>

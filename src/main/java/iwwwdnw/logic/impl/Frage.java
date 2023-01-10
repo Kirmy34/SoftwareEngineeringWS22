@@ -3,9 +3,9 @@ package iwwwdnw.logic.impl;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-public class Frage {
+public class Frage implements iwwwdnw.logic.port.Frage{
 	
-	public enum Level{LEICHT, MITTEL, SCHWER}
+	
 	private Level level;
 	private String fragentext;
 	private LinkedHashMap<String, Boolean> antworten = new LinkedHashMap<String, Boolean>();

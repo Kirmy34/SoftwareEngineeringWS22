@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Wissenskategorie 
+public class Wissenskategorie implements iwwwdnw.logic.port.Wissenskategorie 
 {
 	private List<Fragenkarte> fragenkarten = new ArrayList<Fragenkarte>();
 

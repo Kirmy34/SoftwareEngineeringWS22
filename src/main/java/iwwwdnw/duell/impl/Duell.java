@@ -9,7 +9,7 @@ import iwwwdnw.logic.impl.Fragenkarte;
 import iwwwdnw.logic.impl.Spieler;
 import iwwwdnw.logic.impl.Wissenskategorie;
 
-public class Duell {
+public class Duell implements iwwwdnw.duell.port.Duell{
 	
 	private Frage frage_spieler_1;
 	private Frage frage_spieler_2;
@@ -49,14 +49,11 @@ public class Duell {
 	}
 	
 	
-	
-	public enum Antwort{ RICHTIG, FALSCH, KEINE_ANTWORT}
-	
 	public Antwort antworten(Spieler spieler, boolean antworten[], Frage frage)
 	{
 		Boolean[] richtigeAntworten = (Boolean[])(frage.getAntworten().values().toArray());
 		
-		bool alle_falsch = true;
+		boolean alle_falsch = true;
 		for(int i = 0; i < antworten.length; i++)
 		{
 			if(antworten[i])

@@ -1,7 +1,9 @@
 package iwwwdnw.logic.impl;
 
 import iwwwdnw.duell.impl.Duell;
-public class IWWWDNW {
+
+
+public class IWWWDNW implements iwwwdnw.logic.port.IWWWDNW {
 
 
 	private Wissenskategorie[] wissenskategorien;
@@ -49,7 +51,11 @@ public class IWWWDNW {
 	public boolean wissensstreiterBewegen(WissensStreiter wissensstreiter, Feld startfeld, Feld zielfeld)
 
 	{
-
+		if(wissensstreiter.getPreviousFeld().equals(zielfeld))
+		{
+			return false;
+		}
+		
 		if (zielfeld.istFrei()) {
 			
 			if(startfeld != null)
