@@ -2,19 +2,18 @@ package iwwwdnw.logic.port;
 
 import java.util.Vector;
 
-import iwwwdnw.logic.impl.Feld;
-import iwwwdnw.logic.impl.StartFeld;
+
 
 public interface SpielBrett 
 {
-	
-	public Feld[] getFelder();
-	public void setFelder(Feld[] felder);
-	public StartFeld[] getStartfelder();
-	public void setStartfelder(StartFeld[] startfelder);
-	public Vector getSpielbrett();
-	public void setSpielbrett(Vector spielbrett);
-	public void erstelleSpielBrett(int anzahlSpieler, int felderInnen);
+	public final int BEGINSTARTFELD = 280;
+	public final int MAXAMOUNTFELDER = 300;
+	public iwwwdnw.logic.impl.Feld[] getFelder();
+	public void setFelder(iwwwdnw.logic.impl.Feld[] felder);
+	public iwwwdnw.logic.impl.StartFeld[] getStartfelder();
+	public void setStartfelder(iwwwdnw.logic.impl.StartFeld[] startfelder);
+	public void erstelleSpielBrett(int anzahlSpieler, int felderAussen);
+	public void setStartfeldOwner(iwwwdnw.logic.impl.Spieler spieler, int anzahlSpieler);
 	
 	
 }
