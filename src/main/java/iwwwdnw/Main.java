@@ -1,9 +1,7 @@
 package iwwwdnw;
 
 public class Main {
-
 	public static void main(String[] args) {
-		System.out.println("Hallo SWE");
+		(new View(LogicFactory.FACTORY)).startEventLoop();
 	}
-
 }

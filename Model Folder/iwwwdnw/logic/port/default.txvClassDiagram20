@@ -7,56 +7,46 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
-			<property name="bounds" value="55,135,106,80"/>
+			<property name="bounds" value="55,135,104,80"/>
 			<property name="location_set_by_user" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
 				<property name="bounds" value="-36,30,92,20"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Subject">
-			<property name="bounds" value="44,-4,80,80"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Subject">
-				<property name="bounds" value="-14,30,49,20"/>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Observer">
-			<property name="bounds" value="235,56,80,80"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Observer">
-				<property name="bounds" value="-19,30,59,20"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Frage">
-			<property name="bounds" value="222,155,80,80"/>
+			<property name="bounds" value="222,155,200,186"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Fragenkarte">
-			<property name="bounds" value="104,-4,98,80"/>
+			<property name="bounds" value="104,-4,128,124"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.IWWWDNW">
-			<property name="bounds" value="104,95,92,80"/>
+			<property name="bounds" value="104,95,200,154"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.SpielBrett">
-			<property name="bounds" value="5,5,84,80"/>
+			<property name="bounds" value="5,5,200,200"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Spieler">
-			<property name="bounds" value="0,0,80,80"/>
+			<property name="bounds" value="0,0,200,276"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.StartFeld">
-			<property name="bounds" value="340,-4,80,80"/>
+			<property name="bounds" value="340,-4,123,94"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Wissenskategorie">
-			<property name="bounds" value="340,95,129,80"/>
+			<property name="bounds" value="340,95,200,109"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.WissensStreiter">
-			<property name="bounds" value="340,194,118,80"/>
+			<property name="bounds" value="340,194,200,124"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Feld">
+			<property name="bounds" value="224,-4,200,154"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

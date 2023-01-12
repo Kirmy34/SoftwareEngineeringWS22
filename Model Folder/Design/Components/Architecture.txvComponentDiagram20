@@ -34,8 +34,8 @@
 				</reference>
 			</reference>
 			<reference referencedUin="design:link:::ieje0rlbjgm037xdi75w:ba089nkuv24g8i-v5h0b7">
-				<property name="sourceAnchor" value="470,161"/>
-				<property name="targetAnchor" value="470,220"/>
+				<property name="sourceAnchor" value="450,161"/>
+				<property name="targetAnchor" value="450,220"/>
 				<property name="bendpoints" value=""/>
 			</reference>
 		</reference>
@@ -119,8 +119,8 @@
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgk3o34iveku:-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
-					<property name="sourceAnchor" value="-19,318"/>
-					<property name="targetAnchor" value="460,232"/>
+					<property name="sourceAnchor" value="-20,318"/>
+					<property name="targetAnchor" value="440,232"/>
 					<property name="bendpoints" value=""/>
 				</reference>
 			</reference>
@@ -187,7 +187,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Duell">
-			<property name="bounds" value="455,215,20,20"/>
+			<property name="bounds" value="435,215,20,20"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Duell">
