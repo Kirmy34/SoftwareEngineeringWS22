@@ -1,5 +1,5 @@
 package iwwwdnw.gui;
 
-public class FacadeGui {
+public class GuiFacade {
 
 }
