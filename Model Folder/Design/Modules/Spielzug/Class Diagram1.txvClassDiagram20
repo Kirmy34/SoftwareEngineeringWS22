@@ -6,21 +6,12 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="Class Diagram1"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.duell.impl.Duell">
-			<property name="bounds" value="15,195,169,140"/>
+			<property name="bounds" value="15,195,174,152"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.Feld">
-			<property name="bounds" value="255,195,184,127"/>
-			<property name="location_set_by_user" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.Feld:wissensstreiter">
-				<property name="sourceAnchor" value="444,230"/>
-				<property name="targetAnchor" value="520,230"/>
-			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.IWWWDNW">
-			<property name="bounds" value="275,15,200,195"/>
+			<property name="bounds" value="275,15,200,213"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:duell">
@@ -40,23 +31,13 @@
 				<property name="targetAnchor" value="520,183"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.StartFeld">
-			<property name="bounds" value="277,375,192,80"/>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.WissensStreiter">
+			<property name="bounds" value="515,175,200,91"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_gnt:src:iwwwdnw.logic.impl.StartFeld:Feld">
-				<property name="sourceAnchor" value="371,380"/>
-				<property name="targetAnchor" value="371,327"/>
-				<property name="bendpoints" value=""/>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.WissensStreiter">
-			<property name="bounds" value="515,175,200,85"/>
-			<property name="location_set_by_user" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.WissensStreiter:previousFeld">
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.WissensStreiter:previousFeld">
 				<property name="sourceAnchor" value="520,222"/>
-				<property name="targetAnchor" value="444,222"/>
+				<property name="targetAnchor" value="450,222"/>
 			</reference>
 		</reference>
 	</view>

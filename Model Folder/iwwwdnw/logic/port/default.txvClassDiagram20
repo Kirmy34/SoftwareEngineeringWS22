@@ -25,28 +25,8 @@
 			<property name="bounds" value="104,95,200,154"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.SpielBrett">
-			<property name="bounds" value="5,5,200,200"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Spieler">
-			<property name="bounds" value="0,0,200,276"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.StartFeld">
-			<property name="bounds" value="340,-4,123,94"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Wissenskategorie">
 			<property name="bounds" value="340,95,200,109"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.WissensStreiter">
-			<property name="bounds" value="340,194,200,124"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Feld">
-			<property name="bounds" value="224,-4,200,154"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>
