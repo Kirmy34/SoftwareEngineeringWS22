@@ -1,32 +1,19 @@
 package iwwwdnw.spielzug.port;
 
 public interface Spieler {
-	public enum Farben {
-		DUNKELROT, ROT, HELLROT, RUBINROT, PASTELLROT, ERDBEERROT, TOMATENROT, LIPPENSTIFTROT, BLUTROT, ROSENROT, FERRARIROT
-	}
+	
+	public int getId();
 
 	public int getAlter();
 
-	public void setAlter(int alter);
-
 	public Farben getFarbe();
-
-	public void setFarbe(Farben farbe);
-
-	public int[] getWissensstandsanzeige();
-
-	public void setWissensstandsanzeige(int[] wissensstandsanzeige);
 
 	public String getName();
 
-	public void setName(String name);
+	public int[] getWissensstandsanzeige();
 
-	public WissensStreiter[] getWissensstreiter();
-
-	public void setWissensstreiter(WissensStreiter[] wissensstreiter);
-
-	public int getId();
-
-	public void setId(int id);
+	public boolean givePoint(int index);
+	
+	public boolean takePoint(int index);
 
 }

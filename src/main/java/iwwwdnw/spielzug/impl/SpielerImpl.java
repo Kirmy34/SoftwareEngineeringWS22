@@ -1,74 +1,58 @@
 package iwwwdnw.spielzug.impl;
 
+import iwwwdnw.spielzug.port.Farben;
 import iwwwdnw.spielzug.port.Spieler;
-import iwwwdnw.spielzug.port.Spieler.Farben;
-import iwwwdnw.spielzug.port.StartFeld;
 
 public class SpielerImpl implements Spieler {
-	
+
 	private int id;
 	private int alter;
-	private int[] wissensstandsanzeige;
+	private int[] points;
 	private Farben farbe;
 	private String name;
-	private WissensStreiter[] wissensstreiter;
-	private StartFeld[] startfelder;
+
+	public SpielerImpl(int id, int alter, Farben farbe, String name) {
+		this.id = id;
+		this.alter = alter;
+		this.points = new int[] { 0, 0, 0, 0 };
+		this.farbe = farbe;
+		this.name = name;
+	}
 
 	public int getAlter() {
 		return alter;
-	}
-
-	public void setAlter(int alter) {
-		this.alter = alter;
 	}
 
 	public Farben getFarbe() {
 		return farbe;
 	}
 
-	public void setFarbe(Farben farbe) {
-		this.farbe = farbe;
-	}
-
-	public int[] getWissensstandsanzeige() {
-		return wissensstandsanzeige;
-	}
-
-	public void setWissensstandsanzeige(int[] wissensstandsanzeige) {
-		this.wissensstandsanzeige = wissensstandsanzeige;
-	}
-
 	public String getName() {
 		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public WissensStreiter[] getWissensstreiter() {
-		return wissensstreiter;
-	}
-
-	public void setWissensstreiter(WissensStreiter[] wissensstreiter) {
-		this.wissensstreiter = wissensstreiter;
 	}
 
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public int[] getWissensstandsanzeige() {
+		return points;
 	}
 
-	public StartFeld[] getStartfelder() {
-		return startfelder;
+	public boolean givePoint(int index) {
+		if (this.points[index] >= 5) {
+			return false;
+		}
+
+		this.points[index]++;
+		return true;
 	}
 
-	public void setStartfelder(StartFeld[] startfelder) {
-		this.startfelder = startfelder;
+	public boolean takePoint(int index) {
+		if (this.points[index] <= 0) {
+			return false;
+		}
+		this.points[index]--;
+		return true;
 	}
-	
-	
 }
