@@ -8,4 +8,8 @@ public interface WissensStreiter {
 	public Feld getPreviousFeld();
 
 	public void setPreviousFeld(Feld previousFeld);
+	
+	public void setFeld(Feld feld);
+	
+	public Feld getFeld();
 }

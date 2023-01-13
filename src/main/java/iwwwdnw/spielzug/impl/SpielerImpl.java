@@ -1,8 +1,10 @@
 package iwwwdnw.spielzug.impl;
 
+import iwwwdnw.spielzug.port.Spieler;
+import iwwwdnw.spielzug.port.Spieler.Farben;
+import iwwwdnw.spielzug.port.StartFeld;
 
-
-public class Spieler implements iwwwdnw.logic.port.Spieler {
+public class SpielerImpl implements Spieler {
 	
 	private int id;
 	private int alter;
@@ -10,6 +12,7 @@ public class Spieler implements iwwwdnw.logic.port.Spieler {
 	private Farben farbe;
 	private String name;
 	private WissensStreiter[] wissensstreiter;
+	private StartFeld[] startfelder;
 
 	public int getAlter() {
 		return alter;
@@ -57,6 +60,14 @@ public class Spieler implements iwwwdnw.logic.port.Spieler {
 
 	public void setId(int id) {
 		this.id = id;
+	}
+
+	public StartFeld[] getStartfelder() {
+		return startfelder;
+	}
+
+	public void setStartfelder(StartFeld[] startfelder) {
+		this.startfelder = startfelder;
 	}
 	
 	

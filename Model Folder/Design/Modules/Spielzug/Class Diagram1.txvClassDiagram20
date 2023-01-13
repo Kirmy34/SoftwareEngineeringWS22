@@ -6,12 +6,12 @@
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="$name" value="Class Diagram1"/>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.duell.impl.Duell">
-			<property name="bounds" value="15,195,174,152"/>
+			<property name="bounds" value="15,195,169,140"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.IWWWDNW">
-			<property name="bounds" value="275,15,200,213"/>
+			<property name="bounds" value="275,15,200,195"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:duell">
@@ -32,7 +32,7 @@
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.WissensStreiter">
-			<property name="bounds" value="515,175,200,91"/>
+			<property name="bounds" value="515,175,200,85"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.WissensStreiter:previousFeld">
