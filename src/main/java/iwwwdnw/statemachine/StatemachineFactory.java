@@ -1,6 +1,7 @@
 package iwwwdnw.statemachine;
 
-import iwwwdnw.statemachine.impl.StatemachineFactoryImpl;
+import iwwwdnw.statemachine.StatemachineFactoryImpl;
+
 import iwwwdnw.statemachine.port.StateMachinePort;
 import iwwwdnw.statemachine.port.SubjectPort;
 
