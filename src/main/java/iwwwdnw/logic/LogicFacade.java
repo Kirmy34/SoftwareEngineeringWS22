@@ -12,6 +12,10 @@ import iwwwdnw.logic.port.Wissenskategorie;
 import iwwwdnw.statemachine.StatemachineFactoryImpl;
 import iwwwdnw.statemachine.port.StateMachine;
 
+/***
+ * 
+ * TODO
+ */
 public class LogicFacade implements Frage, Fragenkarte, IWWWDNW, Spielmanager, Wissenskategorie {
 	//private Spielzug spielzugImpl;
 	StatemachineFactoryImpl smf = new StatemachineFactoryImpl();

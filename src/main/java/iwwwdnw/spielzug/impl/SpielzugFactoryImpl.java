@@ -8,8 +8,21 @@ public class SpielzugFactoryImpl implements SpielzugFactory, Spielzug{
 
 	@Override
 	public int[] wuerfeln() {
-		// TODO Auto-generated method stub
-		return null;
+		int rueckgabe[] = new int[2];
+		
+		for(int i  = 0; i < 2; i++)
+		{
+			rueckgabe[i] = getZufallszahl();
+		}		
+
+		return rueckgabe;
+	}
+	
+	public int getZufallszahl()
+	{
+
+		return (int)(6.0 * Math.random() + 1);
+	
 	}
 
 	@Override
