@@ -6,7 +6,7 @@ import java.util.List;
 
 import iwwwdnw.logic.impl.Frage;
 import iwwwdnw.logic.impl.Fragenkarte;
-import iwwwdnw.logic.impl.Spieler;
+import iwwwdnw.spielzug.impl.Spieler;
 import iwwwdnw.logic.impl.Wissenskategorie;
 
 public class Duell implements iwwwdnw.duell.port.Duell{
@@ -96,7 +96,5 @@ public class Duell implements iwwwdnw.duell.port.Duell{
 
 	public void setFrage_spieler_2(Frage frage_spieler_2) {
 		this.frage_spieler_2 = frage_spieler_2;
-	}
-	
-	
+	}	
 }

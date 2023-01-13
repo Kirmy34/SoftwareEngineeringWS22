@@ -1,3 +1,7 @@
+/**
+ * Wird vermutlich nicht mehr gebraucht!
+ */
+
 package iwwwdnw.statemachine.impl;
 
 import java.util.ArrayList;
@@ -18,7 +22,6 @@ public enum StateEnum implements State {
 
 	@Override
 	public boolean isSubStateOf(State s) {
-		// TODO Auto-generated method stub
 
 		boolean result = s == null || this == s; // self contained
 		for (State state : this.subStates)
@@ -31,7 +34,6 @@ public enum StateEnum implements State {
 
 	@Override
 	public boolean isSuperStateOf(State state) {
-		// TODO Auto-generated method stub
 
 		return state == null ? false : state.isSuperStateOf(this);
 

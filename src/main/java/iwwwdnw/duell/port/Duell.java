@@ -2,14 +2,15 @@ package iwwwdnw.duell.port;
 
 import iwwwdnw.logic.impl.Frage;
 import iwwwdnw.logic.impl.Fragenkarte;
-import iwwwdnw.logic.impl.Spieler;
 import iwwwdnw.logic.impl.Wissenskategorie;
+import iwwwdnw.spielzug.port.SpielBrett;
+import iwwwdnw.spielzug.impl.Spieler;
 
 public interface Duell 
 {
 	
 	
-	public void startDuell(Spieler spieler1, Spieler spieler2, Wissenskategorie wissenskategorie);
+	public void startDuell(SpielBrett spieler1, Spieler spieler2, Wissenskategorie wissenskategorie);
 	public Frage getFrage(Spieler spieler, Fragenkarte fragenkarte);
 	public enum Antwort{ RICHTIG, FALSCH, KEINE_ANTWORT}
 	public Antwort antworten(Spieler spieler, boolean antworten[], Frage frage);
