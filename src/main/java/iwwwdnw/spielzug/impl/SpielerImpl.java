@@ -1,5 +1,6 @@
 package iwwwdnw.spielzug.impl;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,10 +12,33 @@ public class SpielerImpl implements Spieler {
 	private int id;
 	private int alter;
 	private int[] points;
-	private Farben farbe;
+	private Color farbe;
 	private String name;
 	private List<StartFeld> startfelder = new ArrayList<StartFeld>();
 	private WissensStreiter[] wissensstreiter;
+	
+	
+	public SpielerImpl(int id, int alter, Color farbe, String name) {
+		this.id = id;
+		this.alter = alter;
+		this.points = new int[] { 0, 0, 0, 0 };
+		this.farbe = farbe;
+		this.name = name;
+		
+		wissensstreiter = new WissensStreiter[5];
+		
+		for(int i = 0; i < wissensstreiter.length; i++) {
+			
+			wissensstreiter[i] = new WissensStreiterImpl();
+			
+		}
+		
+		
+		
+	}
+	
+	
+	
 	
 	
 	public List<StartFeld> getStartfelder() {
@@ -43,19 +67,13 @@ public class SpielerImpl implements Spieler {
 		
 	}
 
-	public SpielerImpl(int id, int alter, Farben farbe, String name) {
-		this.id = id;
-		this.alter = alter;
-		this.points = new int[] { 0, 0, 0, 0 };
-		this.farbe = farbe;
-		this.name = name;
-	}
+	
 
 	public int getAlter() {
 		return alter;
 	}
 
-	public Farben getFarbe() {
+	public Color getFarbe() {
 		return farbe;
 	}
 

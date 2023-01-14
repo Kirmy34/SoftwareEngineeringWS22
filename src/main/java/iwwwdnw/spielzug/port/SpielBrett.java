@@ -25,6 +25,8 @@ public interface SpielBrett {
 	
 	public List[] getSpielBrett();
 	
+	public StartFeld[] getStartfelder();
+	
 
 	
 }

@@ -20,7 +20,7 @@
 				<property name="bounds" value="307,74,14,14"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbmcw941-g2utdr:ba089nkuv24g8i-v5h0b7">
-					<property name="bounds" value="-7,24,28,15"/>
+					<property name="bounds" value="-6,24,26,13"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbmcwukgabxw76:-vedwtdlbmcw941-g2utdr:ba089nkuv24g8i-v5h0b7">
 					<property name="sourceAnchor" value="500,168"/>
@@ -48,7 +48,7 @@
 				<property name="bounds" value="56,5,20,20"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$name:design:node:::-amcqg9lbjgwflrm9idhq:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="-12,30,44,15"/>
+					<property name="bounds" value="-9,30,39,13"/>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu">
@@ -60,7 +60,7 @@
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="-4,24,23,15"/>
+					<property name="bounds" value="-2,24,19,13"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbmcyw2oft3wjo:-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu">
 					<property name="sourceAnchor" value="628,313"/>
@@ -69,10 +69,10 @@
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbutq35s-5xgoai:-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu">
 					<property name="sourceAnchor" value="623,327"/>
-					<property name="targetAnchor" value="623,433"/>
+					<property name="targetAnchor" value="623,429"/>
 					<property name="bendpoints" value=""/>
 					<reference referencedUin="label:delegate:design:link:::ieje0rlbutq35s-5xgoai:-vedwtdlbmcslly35fcyw:ba089nlbjg4rm5-22mdcu">
-						<property name="bounds" value="626,371,61,19"/>
+						<property name="bounds" value="626,370,58,17"/>
 					</reference>
 				</reference>
 			</reference>
@@ -88,11 +88,11 @@
 						<property name="bendpoints" value=""/>
 					</reference>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbuu5974-u8fu:ba089nlbjgmj0x-9zri6v:ba089nlbjg4rm5-22mdcu">
-						<property name="bounds" value="2,24,10,15"/>
+						<property name="bounds" value="2,24,10,13"/>
 					</reference>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgxlnp-p85np6:ba089nlbjgmj0x-9zri6v:ba089nlbjg4rm5-22mdcu">
-					<property name="sourceAnchor" value="290,520"/>
+					<property name="sourceAnchor" value="289,516"/>
 					<property name="targetAnchor" value="98,375"/>
 					<property name="bendpoints" value=""/>
 				</reference>
@@ -101,7 +101,7 @@
 				<property name="bounds" value="106,-7,14,14"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="-28,24,71,15"/>
+					<property name="bounds" value="-24,24,63,13"/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgjywa-tx12h9:-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
 					<property name="sourceAnchor" value="-19,317"/>
@@ -115,7 +115,7 @@
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgxdjk-dekbf:-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
 					<property name="sourceAnchor" value="-34,326"/>
-					<property name="targetAnchor" value="-63,362"/>
+					<property name="targetAnchor" value="-63,358"/>
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgk3o34iveku:-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu">
@@ -128,8 +128,8 @@
 				<property name="bounds" value="56,65,100,60"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:link:::ieje0rlbjgwtdhphbwzh:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
-					<property name="sourceAnchor" value="-70,420"/>
-					<property name="targetAnchor" value="-70,380"/>
+					<property name="sourceAnchor" value="-70,416"/>
+					<property name="targetAnchor" value="-70,376"/>
 					<property name="bendpoints" value=""/>
 				</reference>
 				<reference referencedUin="design:link:::ieje0rlbjgzgnm-5zg8xv:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
@@ -141,7 +141,7 @@
 					<property name="bounds" value="93,12,14,14"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbuu52dhaomtph:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
-						<property name="bounds" value="2,24,10,15"/>
+						<property name="bounds" value="2,24,10,13"/>
 					</reference>
 					<reference referencedUin="design:link:::ieje0rlbuu7evqjbyxfb:-vedwtdlbuu52dhaomtph:ba089nlbjgm9ds-qouz1o:ba089nlbjg4rm5-22mdcu">
 						<property name="sourceAnchor" value="27,439"/>
@@ -154,17 +154,17 @@
 				<property name="bounds" value="216,5,20,20"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="label:$name:design:node:::-amcqg9lbjgwjn4-le0abp:ba089nlbjg4rm5-22mdcu">
-					<property name="bounds" value="-3,30,27,15"/>
+					<property name="bounds" value="-1,30,23,13"/>
 				</reference>
 			</reference>
 			<reference referencedUin="design:node:::ba089nlbutj98m-v5rulc:ba089nlbjg4rm5-22mdcu">
-				<property name="bounds" value="696,85,103,60"/>
+				<property name="bounds" value="696,85,100,60"/>
 				<property name="location_set_by_user" value="true"/>
 				<reference referencedUin="design:node:::-vedwtdlbutpoxy-m8y2hn:ba089nlbutj98m-v5rulc:ba089nlbjg4rm5-22mdcu">
 					<property name="bounds" value="57,-7,14,14"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbutpoxy-m8y2hn:ba089nlbutj98m-v5rulc:ba089nlbjg4rm5-22mdcu">
-						<property name="bounds" value="-57,-14,39,15"/>
+						<property name="bounds" value="-57,-14,36,13"/>
 						<property name="location_set_by_user" value="true"/>
 					</reference>
 				</reference>
@@ -172,7 +172,7 @@
 					<property name="bounds" value="-7,21,14,14"/>
 					<property name="location_set_by_user" value="true"/>
 					<reference referencedUin="label:$port20InplaceEditing:design:node:::-vedwtdlbuu2jpeo8tp2e:ba089nlbutj98m-v5rulc:ba089nlbjg4rm5-22mdcu">
-						<property name="bounds" value="-93,-14,71,15"/>
+						<property name="bounds" value="-93,-14,64,13"/>
 						<property name="location_set_by_user" value="true"/>
 					</reference>
 				</reference>
@@ -183,7 +183,7 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Spielzug">
-				<property name="bounds" value="-12,30,44,15"/>
+				<property name="bounds" value="-9,30,39,13"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Duell">
@@ -191,16 +191,16 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Duell">
-				<property name="bounds" value="-3,30,27,15"/>
+				<property name="bounds" value="-1,30,23,13"/>
 			</reference>
 		</reference>
 		<reference referencedUin="design:node:::1g64ylbjhbn0dm5o41d">
-			<property name="bounds" value="975,115,137,38"/>
+			<property name="bounds" value="975,115,127,34"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
 		<reference referencedUin="design:node:::1g64ylbjhbxtm-lioc9d">
-			<property name="bounds" value="1135,415,95,38"/>
+			<property name="bounds" value="1135,415,85,34"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
@@ -209,7 +209,7 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Subjekt">
-				<property name="bounds" value="-9,30,39,15"/>
+				<property name="bounds" value="-8,30,36,13"/>
 			</reference>
 		</reference>
 		<reference referencedUin="jdt:e_class:src:Design.Components.Observer">
@@ -217,7 +217,7 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 			<reference referencedUin="label:$name:jdt:e_class:src:Design.Components.Observer">
-				<property name="bounds" value="-13,30,47,15"/>
+				<property name="bounds" value="-12,30,45,13"/>
 			</reference>
 		</reference>
 	</view>

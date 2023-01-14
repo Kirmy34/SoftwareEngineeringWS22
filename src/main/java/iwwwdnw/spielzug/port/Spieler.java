@@ -1,14 +1,17 @@
 package iwwwdnw.spielzug.port;
 
+import java.awt.Color;
 import java.util.List;
 
 public interface Spieler {
+	
+	public static final Color colors[] = {Color.BLACK, Color.RED, Color.BLUE, Color.GREEN.darker(), Color.YELLOW, Color.MAGENTA};
 	
 	public int getId();
 
 	public int getAlter();
 
-	public Farben getFarbe();
+	public Color getFarbe();
 
 	public String getName();
 

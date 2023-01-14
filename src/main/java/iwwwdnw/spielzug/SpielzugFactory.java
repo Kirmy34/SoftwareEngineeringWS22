@@ -1,6 +1,7 @@
 package iwwwdnw.spielzug;
 
-import iwwwdnw.spielzug.impl.Farben;
+import java.awt.Color;
+
 import iwwwdnw.spielzug.impl.SpielBrettImpl;
 import iwwwdnw.spielzug.impl.SpielerImpl;
 import iwwwdnw.spielzug.impl.SpielzugFactoryImpl;
@@ -11,7 +12,7 @@ public interface SpielzugFactory {
 	SpielzugFactory FACTORY = new SpielzugFactoryImpl();
 	
 	SpielBrettImpl createSpielBrettImpl(int anzahlSpieler);
-	SpielerImpl createSpielerImpl(int id, int alter, Farben farbe, String name);
+	SpielerImpl createSpielerImpl(int id, int alter, Color farbe, String name);
 	StartFeldImpl createStartFeldImpl();
 	WissensStreiterImpl createWissensStreiterImpl();
 }

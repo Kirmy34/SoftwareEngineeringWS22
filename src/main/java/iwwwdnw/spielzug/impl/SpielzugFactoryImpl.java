@@ -1,7 +1,8 @@
 package iwwwdnw.spielzug.impl;
 
+import java.awt.Color;
+
 import Analyse.ObjectModel.WissensStreiter;
-import iwwwdnw.spielzug.Farben;
 import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
 
@@ -15,7 +16,7 @@ public class SpielzugFactoryImpl implements SpielzugFactory{
 	}
 
 	@Override
-	public SpielerImpl createSpielerImpl(int id, int alter, Farben farbe, String name) {
+	public SpielerImpl createSpielerImpl(int id, int alter, Color farbe, String name) {
 		SpielerImpl s = null;
 		s = new SpielerImpl(id,alter,farbe,name);
 		return s;

@@ -6,7 +6,7 @@ import iwwwdnw.spielzug.port.*;
 public class FeldImpl implements Feld {
 
 	protected WissensStreiter wissensstreiter;
-	private int id;
+	protected int id;
 
 	@Override
 	public boolean vonGegnerBesetzt(WissensStreiter wissensstreiter) {

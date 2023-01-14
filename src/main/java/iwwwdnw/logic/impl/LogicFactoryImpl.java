@@ -2,6 +2,7 @@ package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.LogicFactory;
 
+
 public class LogicFactoryImpl implements LogicFactory{
 
 	@Override
@@ -25,4 +26,8 @@ public class LogicFactoryImpl implements LogicFactory{
 		return fk;
 	}
 
+	
+	
+	
+	
 }

@@ -1,6 +1,8 @@
 package iwwwdnw.spielzug.port;
 
 public interface WissensStreiter {
+	
+	
 	public Spieler getSpieler();
 
 	public void setSpieler(Spieler spieler);
@@ -12,4 +14,6 @@ public interface WissensStreiter {
 	public void setFeld(Feld feld);
 	
 	public Feld getFeld();
+
+	public boolean istAufHeimatFeld();
 }

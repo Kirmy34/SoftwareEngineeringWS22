@@ -44,4 +44,10 @@ public class WissensStreiterImpl implements iwwwdnw.spielzug.port.WissensStreite
 		return this.feld;
 	}
 	
+	@Override
+	public boolean istAufHeimatFeld()
+	{
+		return this.feld == null;
+	}
+	
 }

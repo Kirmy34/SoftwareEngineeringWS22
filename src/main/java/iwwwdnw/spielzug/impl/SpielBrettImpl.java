@@ -440,6 +440,17 @@ public class SpielBrettImpl implements SpielBrett
 		wissensstreiter.setPreviousFeld(null);
 	}
 
+
+
+
+
+
+	@Override
+	public StartFeld[] getStartfelder() {
+		// TODO Auto-generated method stub
+		return this.startfelder;
+	}
+
 	
 	
 	
