@@ -1,6 +1,6 @@
 package iwwwdnw.spielzug.port;
 
-import iwwwdnw.spielzug.impl.WissensStreiter;
+
 
 public interface Feld {
 	public WissensStreiter getWissensstreiter();

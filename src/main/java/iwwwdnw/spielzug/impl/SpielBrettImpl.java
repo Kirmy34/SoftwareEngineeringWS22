@@ -259,7 +259,9 @@ public class SpielBrettImpl implements SpielBrett
 			if(startfelder[i].getOwner() == null)
 			{
 				startfelder[i].setOwner(spieler);
-				startfelder[i + anzahlSpieler].setOwner(spieler);
+				spieler.setStartfeld(startfelder[i]);
+				startfelder[i + this.anzahlSpieler].setOwner(spieler);
+				spieler.setStartfeld(startfelder[i + this.anzahlSpieler]);
 				return;
 			}
 		}
@@ -270,10 +272,6 @@ public class SpielBrettImpl implements SpielBrett
 		
 	}
 	
-	@Override
-	public SpielBrettImpl getSpielBrettImpl() {
-		return this;
-	}
 	
 	@Override
 	public List[] getSpielBrett()
@@ -297,6 +295,7 @@ public class SpielBrettImpl implements SpielBrett
 			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
 			startfeld.setWissensstreiter(null);
 			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+			zielfeld.getWissensstreiter().setFeld(zielfeld);
 			return true;
 			
 		}
@@ -311,13 +310,43 @@ public class SpielBrettImpl implements SpielBrett
 			zielfeld.setWissensstreiter(w1);
 			startfeld.setWissensstreiter(null);
 			
-			this.spielzugVorbei(wissensstreiter);
+			w1.setFeld(zielfeld);
+			w2.setFeld(null);
+			this.spielzugVorbei(w1);
+			this.duellVerloren(w2);
 			return true;
 		}
 		
 		
 		return false;
 	}
+	
+	
+	
+	public boolean duellVerloren(WissensStreiter wissensstreiter)
+	{
+		
+		List<StartFeld> vStartfelder = wissensstreiter.getSpieler().getStartfelder();
+		
+		for(int i = 0; i < vStartfelder.size(); i++)
+		{
+			if(vStartfelder.get(i).getWissensstreiter() == null)
+			{
+				vStartfelder.get(i).setWissensstreiter(wissensstreiter);
+				wissensstreiter.setFeld(vStartfelder.get(i));
+				this.spielzugVorbei(wissensstreiter);
+				return true;
+			}
+		}
+		
+		return false;
+	}
+	
+	
+	
+	
+	
+	
 	
 	
 	@Override
@@ -373,33 +402,27 @@ public class SpielBrettImpl implements SpielBrett
 	
 	
 	
-	
-	
-	 @Override
-	 public void duellVorbei(WissensStreiter w1, WissensStreiter w2)
-	 {
-		 
-	 }
-	
-	
-	
-	
-	
-	
-	
-	
-	@Override
+
 	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, StartFeld startfeld)
 	{
 		if(startfeld.istFrei())
 		{
 			startfeld.setWissensstreiter(wissensstreiter);
+			wissensstreiter.setFeld(startfeld);
 			return true;
 			
 		}
 		else if(startfeld.vonGegnerBesetzt(wissensstreiter))
 		{
-			// starte Duell
+			WissensStreiter w1 = wissensstreiter;
+			WissensStreiter w2 = startfeld.getWissensstreiter();
+			
+			startfeld.setWissensstreiter(w1);
+			
+			w1.setFeld(startfeld);
+			w2.setFeld(null);
+			this.spielzugVorbei(w1);
+			this.duellVerloren(w2);
 			return true;
 		}
 		else
@@ -412,7 +435,6 @@ public class SpielBrettImpl implements SpielBrett
 	
 	
 	
-	@Override
 	public void spielzugVorbei(WissensStreiter wissensstreiter)
 	{
 		wissensstreiter.setPreviousFeld(null);

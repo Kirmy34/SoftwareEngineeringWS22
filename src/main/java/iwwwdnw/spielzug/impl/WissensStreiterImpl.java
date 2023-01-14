@@ -1,6 +1,8 @@
 package iwwwdnw.spielzug.impl;
 
-public class WissensStreiter implements iwwwdnw.spielzug.port.WissensStreiter{
+import iwwwdnw.spielzug.port.*;
+
+public class WissensStreiterImpl implements iwwwdnw.spielzug.port.WissensStreiter{
 	
 	private Spieler spieler;
 	private Feld previousFeld = null;

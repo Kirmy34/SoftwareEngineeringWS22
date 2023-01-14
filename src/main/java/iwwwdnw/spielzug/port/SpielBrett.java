@@ -2,7 +2,8 @@ package iwwwdnw.spielzug.port;
 
 import java.util.List;
 
-import iwwwdnw.spielzug.impl.SpielBrettImpl;
+
+
 
 public interface SpielBrett {
 	public final int BEGINSTARTFELD = 280;
@@ -18,16 +19,12 @@ public interface SpielBrett {
 	
 	public List<Feld> getPossibleWays(WissensStreiter wissensstreiter);
 	
-	public void duellVorbei(WissensStreiter w1, WissensStreiter w2);
-	
 	public void spielzugVorbei(WissensStreiter wissensstreiter); //nur, um previousFeld zu löschen
 
-	
-	
-	
-	
-	public SpielBrettImpl getSpielBrettImpl();
+	public boolean duellVerloren(WissensStreiter wissensstreiter);
 	
 	public List[] getSpielBrett();
+	
 
+	
 }

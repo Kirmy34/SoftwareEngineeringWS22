@@ -1,13 +1,14 @@
 
 package iwwwdnw.spielzug.impl;
 
-import iwwwdnw.spielzug.port.Feld;
+import iwwwdnw.spielzug.port.*;
 
 public class FeldImpl implements Feld {
 
 	protected WissensStreiter wissensstreiter;
 	private int id;
 
+	@Override
 	public boolean vonGegnerBesetzt(WissensStreiter wissensstreiter) {
 
 		if (this.wissensstreiter.getSpieler().equals(wissensstreiter.getSpieler())) {

@@ -31,11 +31,11 @@
 				<property name="targetAnchor" value="520,183"/>
 			</reference>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.WissensStreiter">
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.WissensStreiterImpl">
 			<property name="bounds" value="515,175,200,85"/>
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.WissensStreiter:previousFeld">
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.spielzug.impl.WissensStreiterImpl:previousFeld">
 				<property name="sourceAnchor" value="520,222"/>
 				<property name="targetAnchor" value="450,222"/>
 			</reference>
