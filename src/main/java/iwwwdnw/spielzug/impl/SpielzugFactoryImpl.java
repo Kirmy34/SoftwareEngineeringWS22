@@ -4,37 +4,29 @@ import Analyse.ObjectModel.WissensStreiter;
 import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
 
-public class SpielzugFactoryImpl implements SpielzugFactory, Spielzug{
-
-	@Override
-	public int[] wuerfeln() {
-		int rueckgabe[] = new int[2];
-		
-		for(int i  = 0; i < 2; i++)
-		{
-			rueckgabe[i] = getZufallszahl();
-		}		
-
-		return rueckgabe;
+public class SpielzugFactoryImpl implements SpielzugFactory{
+	public SpielBrettImpl createSpielbrett(int anzahlSpieler) {
+		SpielBrettImpl sb = null;
+		sb = new SpielBrettImpl(anzahlSpieler); 
+		return sb;
 	}
 	
-	public int getZufallszahl()
-	{
-
-		return (int)(6.0 * Math.random() + 1);
+	public SpielerImpl createSpielerImpl(int id, int alter, Farben farbe, String name) {
+		SpielerImpl s = null;
+		s = new SpielerImpl(id, alter, farbe, name); 
+		return s;
+	}
 	
+	public StartFeldImpl createStartFeldImpl() {
+		StartFeldImpl sf = null;
+		sf = new StartFeldImpl();
+		return sf;
 	}
-
-	@Override
-	public void wissensstreiterBewegen(WissensStreiter wissensstreiter) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void vomHeimZumStartfeld(WissensStreiter wissensstreiter) {
-		// TODO Auto-generated method stub
-		
+	
+	public WissensStreiterImpl createWissensStreiterImpl() {
+		WissensStreiterImpl ws = null;
+		ws = new WissensStreiterImpl(); 
+		return ws;
 	}
 
 }
