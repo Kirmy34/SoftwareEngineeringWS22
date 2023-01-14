@@ -9,7 +9,7 @@ import iwwwdnw.spielzug.impl.WissensStreiterImpl;
 public interface SpielzugFactory {
 	SpielzugFactory FACTORY = new SpielzugFactoryImpl();
 	
-	SpielBrettImpl spielBrettImpl();
+	SpielBrettImpl spielBrettImpl(int anzahlSpieler);
 	SpielerImpl spielerImpl();
 	StartFeldImpl startFeldImpl();
 	WissensStreiterImpl wissensStreiterImpl();
