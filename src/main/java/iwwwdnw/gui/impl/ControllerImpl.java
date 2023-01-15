@@ -5,7 +5,7 @@ public class ControllerImpl
 	
 	public void buttonPressed(int id)
 	{
-		System.out.println("Hello World" + id);
+		System.out.println("Button pressed: " + id);
 	}
 
 }
