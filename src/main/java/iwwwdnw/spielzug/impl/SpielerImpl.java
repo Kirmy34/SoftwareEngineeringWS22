@@ -38,7 +38,9 @@ public class SpielerImpl implements Spieler {
 	}
 	
 	
-	
+	public int[] getPoints() {
+		return points;
+	}
 	
 	
 	public List<StartFeld> getStartfelder() {

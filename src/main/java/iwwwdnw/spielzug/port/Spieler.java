@@ -16,6 +16,8 @@ public interface Spieler {
 	public String getName();
 
 	public int[] getWissensstandsanzeige();
+	
+	public int[] getPoints();
 
 	public boolean givePoint(int index);
 	
