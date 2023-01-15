@@ -7,6 +7,7 @@ import iwwwdnw.spielzug.impl.SpielerImpl;
 import iwwwdnw.spielzug.impl.SpielzugFactoryImpl;
 import iwwwdnw.spielzug.impl.StartFeldImpl;
 import iwwwdnw.spielzug.impl.WissensStreiterImpl;
+import iwwwdnw.spielzug.port.Spielzug;
 
 public interface SpielzugFactory {
 	SpielzugFactory FACTORY = new SpielzugFactoryImpl();
@@ -15,4 +16,6 @@ public interface SpielzugFactory {
 	SpielerImpl createSpielerImpl(int id, int alter, Color farbe, String name);
 	StartFeldImpl createStartFeldImpl();
 	WissensStreiterImpl createWissensStreiterImpl();
+	
+	Spielzug spielzug();
 }

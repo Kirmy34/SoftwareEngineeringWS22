@@ -6,28 +6,5 @@
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
 		<property name="__options" value="option.nlayout.recursive=true"/>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
-			<property name="bounds" value="55,135,104,80"/>
-			<property name="location_set_by_user" value="true"/>
-			<reference referencedUin="label:$name:jdt:e_class:src:iwwwdnw.logic.port.Spielmanager">
-				<property name="bounds" value="-36,30,92,20"/>
-			</reference>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Frage">
-			<property name="bounds" value="222,155,200,186"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Fragenkarte">
-			<property name="bounds" value="104,-4,128,124"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.IWWWDNW">
-			<property name="bounds" value="104,95,200,154"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.port.Wissenskategorie">
-			<property name="bounds" value="340,95,200,109"/>
-			<property name="location_set_by_user" value="true"/>
-		</reference>
 	</view>
 </nodeSet>

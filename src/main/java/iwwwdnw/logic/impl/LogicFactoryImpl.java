@@ -1,33 +1,28 @@
 package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.LogicFactory;
+import iwwwdnw.spielzug.SpielzugFactory;
+import iwwwdnw.spielzug.impl.SpielzugImpl;
+import iwwwdnw.spielzug.port.Spielzug;
+import iwwwdnw.statemachine.port.Subject;
 
+public class LogicFactoryImpl implements LogicFactory {
 
-public class LogicFactoryImpl implements LogicFactory{
+	SpielzugImpl spielzug;
 
 	@Override
-	public Wissenskategorie createWissenskategorie() {
-		Wissenskategorie w = null;
-		w = new Wissenskategorie(); 
-		return w;
+	public Spielzug spielzug() {
+
+		if (this.spielzug == null) {
+			this.spielzug = new SpielzugImpl();
+		}
+
+		return this.spielzug;
 	}
 
 	@Override
-	public Frage createFrage() {
-		Frage f = null;
-		f = new Frage(); 
-		return f;
+	public Subject subject() {
+		return spielzug();
 	}
 
-	@Override
-	public Fragenkarte createFragenkarte() {
-		Fragenkarte fk = null;
-		fk = new Fragenkarte(); 
-		return fk;
-	}
-
-	
-	
-	
-	
 }

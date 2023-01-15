@@ -11,6 +11,7 @@ import javax.swing.JButton;
 
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.gui.*;
+import iwwwdnw.gui.port.Controller;
 
 public class SpielbrettPanel extends CustomPanel {
 
@@ -21,15 +22,19 @@ public class SpielbrettPanel extends CustomPanel {
 	private JButton[][] buttons;
 	private Spieler[] spieler;
 	private static final int SIZE = 17;
-	private ControllerImpl controller;
+	private Controller controller;
 
-	public SpielbrettPanel(Spieler[] spieler) {
+	public SpielbrettPanel(Spieler[] spieler, Controller ctrl) {
 		super();
 		this.spieler = spieler;
 		buttons = new JButton[SIZE][SIZE];
-		controller = new ControllerImpl();
+		this.controller = ctrl;
 		createGUI();
 	}
+	
+	public void update() {
+		// TODO: blah
+	};
 
 	private void createGUI() {
 		c.insets = new Insets(1, 1, 1, 1);

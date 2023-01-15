@@ -7,6 +7,8 @@ import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.port.Spielzug;
 
 public class SpielzugFactoryImpl implements SpielzugFactory{
+	
+	Spielzug spielzug;
 
 	@Override
 	public SpielBrettImpl createSpielBrettImpl(int anzahlSpieler) {
@@ -34,6 +36,11 @@ public class SpielzugFactoryImpl implements SpielzugFactory{
 		WissensStreiterImpl w = null;
 		w = new WissensStreiterImpl();
 		return w;
+	}
+
+	@Override
+	public Spielzug spielzug() {
+		
 	}
 	
 }

@@ -10,27 +10,6 @@
 			<property name="location_set_by_user" value="true"/>
 			<property name="$shortcutReference" value="true"/>
 		</reference>
-		<reference referencedUin="jdt:e_class:src:iwwwdnw.logic.impl.IWWWDNW">
-			<property name="bounds" value="275,15,200,195"/>
-			<property name="location_set_by_user" value="true"/>
-			<property name="$shortcutReference" value="true"/>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:duell">
-				<property name="sourceAnchor" value="280,143"/>
-				<property name="targetAnchor" value="178,200"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:feld">
-				<property name="sourceAnchor" value="364,20"/>
-				<property name="targetAnchor" value="364,200"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:wissens">
-				<property name="sourceAnchor" value="480,147"/>
-				<property name="targetAnchor" value="542,180"/>
-			</reference>
-			<reference referencedUin="jdt:l_ast:src:iwwwdnw.logic.impl.IWWWDNW:wissensStreiter">
-				<property name="sourceAnchor" value="480,183"/>
-				<property name="targetAnchor" value="520,183"/>
-			</reference>
-		</reference>
 		<reference referencedUin="jdt:e_class:src:iwwwdnw.spielzug.impl.WissensStreiterImpl">
 			<property name="bounds" value="515,175,200,85"/>
 			<property name="location_set_by_user" value="true"/>
