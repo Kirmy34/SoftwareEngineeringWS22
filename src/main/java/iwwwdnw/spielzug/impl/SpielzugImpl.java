@@ -46,6 +46,13 @@ public class SpielzugImpl implements Spielzug{
 	{
 		// TODO Auto-generated method stub
 		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 	@Override

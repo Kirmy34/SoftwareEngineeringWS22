@@ -17,10 +17,10 @@ public class Main {
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
 		//Beispiel Spieler-Array
-		Spieler[] spieler = {new SpielerImpl(0, 11, Color.BLACK, "Simon"),
-				 new SpielerImpl(1, 12, Color.BLUE, "Franz"),
-				 new SpielerImpl(2, 13, Color.RED, "Dietrich"),
-				 new SpielerImpl(3, 14, Color.GREEN.darker(), "Daniel")};
+		Spieler[] spieler = {new SpielerImpl(0, 11, Color.RED.darker().darker(), "Simon"),
+				 new SpielerImpl(1, 12, Color.RED, "Franz"),
+				 new SpielerImpl(2, 13, Color.RED.brighter().brighter(), "Dietrich"),
+				 new SpielerImpl(3, 14, Color.RED.darker(), "Daniel")};
 		GamePanel panel = new GamePanel(spieler);
 		frame.add(panel);
 		

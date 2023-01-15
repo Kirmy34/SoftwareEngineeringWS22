@@ -11,15 +11,21 @@ public class RoundButton extends JButton {
 	private static final Dimension DIM = new Dimension(30, 30);
 	private Color borderColor;
 	private static final Color STANDARD_BACKGROUND = Color.GRAY;
+	private final int id;
 
-	public RoundButton(Color borderColor) {
+	public int getId() {
+		return id;
+	}
+
+	public RoundButton(Color borderColor, int id) {
 		this.setBackground(STANDARD_BACKGROUND);
 		this.borderColor = borderColor;
 		Dimension size = DIM;
 		size.width = size.height = Math.max(size.width, size.height);
 		setPreferredSize(DIM);
-
+		this.id = id;
 		setContentAreaFilled(false);
+		
 	}
 
 	protected void paintComponent(Graphics g) {

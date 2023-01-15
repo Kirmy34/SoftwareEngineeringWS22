@@ -8,4 +8,7 @@ public interface Spielmanager extends Duell, Spielzug {
 	
 	
 	
+	
+	
+	
 }
