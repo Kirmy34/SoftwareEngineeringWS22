@@ -18,7 +18,7 @@ public class SpielBrettImpl implements SpielBrett {
 	private List spielbrett[] = new List[300];
 	private int anzahlSpieler;
 
-	public SpielBrettImpl(int anzahlSpieler) {
+	public SpielBrettImpl(int anzahlSpieler, Spieler[] spieler) {
 		startfelder = new StartFeldImpl[20];
 		felder = new FeldImpl[300];
 		this.anzahlSpieler = anzahlSpieler;
@@ -39,10 +39,13 @@ public class SpielBrettImpl implements SpielBrett {
 		default:
 			this.erstelleSpielBrett(6, 9);
 		}
+		for (int i = 0; i < spieler.length; i++) {
+			setStartfeldOwner(spieler[i]);
+		}
+
 	}
 
-	@Override
-	public void erstelleSpielBrett(int anzahlSpieler, int felderAussen) {
+	private void erstelleSpielBrett(int anzahlSpieler, int felderAussen) {
 		int anzahlSpielerInit = anzahlSpieler;
 		// Feldinstanzen erstellen
 
@@ -248,15 +251,15 @@ public class SpielBrettImpl implements SpielBrett {
 	@Override
 	public boolean wissensstreiterBewegen(Feld startfeld, Feld zielfeld) {
 
-		if (startfeld.getWissensstreiter().getPreviousFeld().equals(zielfeld)) {
-			return false;
-		}
+//		if (startfeld.getWissensstreiter().getPreviousFeld().equals(zielfeld)) {
+//			return false;
+//		}
 
 		if (zielfeld.istFrei()) {
 
 			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
 			startfeld.setWissensstreiter(null);
-			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+//			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
 			zielfeld.getWissensstreiter().setFeld(zielfeld);
 			return true;
 
@@ -332,7 +335,9 @@ public class SpielBrettImpl implements SpielBrett {
 		return auswahl;
 	}
 
-	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, StartFeld startfeld) {
+	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, int id) {
+		StartFeld startfeld = this.startfelder[id - 280];
+
 		if (startfeld.istFrei()) {
 			startfeld.setWissensstreiter(wissensstreiter);
 			wissensstreiter.setFeld(startfeld);
@@ -362,6 +367,20 @@ public class SpielBrettImpl implements SpielBrett {
 	public StartFeld[] getStartfelder() {
 		// TODO Auto-generated method stub
 		return this.startfelder;
+	}
+
+	public boolean istStartFeldvonSpieler(Spieler sp, int feldId) {
+
+		return sp.getId() == this.startfelder[feldId - 280].getOwner().getId();
+	}
+
+	public Feld getFeld(int id) {
+		if (id < 280) {
+			return this.felder[id];
+		} else {
+			return this.startfelder[id - 280];
+		}
+
 	}
 
 }

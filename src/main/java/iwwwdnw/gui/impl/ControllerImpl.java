@@ -5,6 +5,7 @@ import java.util.Queue;
 
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
+import iwwwdnw.logic.port.Model;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
@@ -15,14 +16,14 @@ public class ControllerImpl implements Controller, Observer {
 	Queue<Integer> q = new LinkedList<>();
 
 	private View myView;
-	private Subject subject;
-	private Spielzug myModel;
+//	private Subject subject;
+	private Model myModel;
 
 	ControllerImpl(View view, LogicFactory factory) {
 		this.myView = view;
-		this.myModel = factory.spielzug();
-		this.subject = factory.subject();
-		this.subject.attach(this);
+		this.myModel = factory.model();
+//		this.subject = factory.subject();
+//		this.subject.attach(this);
 	}
 
 	public void update(State newState) {
@@ -30,22 +31,9 @@ public class ControllerImpl implements Controller, Observer {
 	}
 
 	public void doit() {
-		// Update GUI
-//		this.myView.show(/* Eingabeaufforderung */);
-
 		while (!q.isEmpty()) {
-
-			int req = q.remove();
-			System.out.println("Button pressed: " + req);
-
-			if (req == 1000) {
-				myModel.wuerfeln();
-				continue;
-			}
+			myModel.service(q.remove());
 		}
-
-		// Do sysops...
-
 	}
 
 	public void buttonPressed(int id) {

@@ -12,10 +12,12 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import iwwwdnw.gui.port.Controller;
+import iwwwdnw.logic.port.Model;
 
 public class WuerfelnPanel extends CustomPanel {
 	
 	Controller controller;
+	Model model;
 
 	/**
 	 * 
@@ -24,9 +26,10 @@ public class WuerfelnPanel extends CustomPanel {
 	private JLabel ergebnis;
 	private JButton button;
 
-	public WuerfelnPanel(Controller controller) {
+	public WuerfelnPanel(Controller controller, Model model) {
 		super();
 		this.controller = controller;
+		this.model = model;
 		ergebnis = new JLabel("Gewuerfelt:");
 		button = new JButton("Wuerfeln!");
 		createGUI();
@@ -49,7 +52,8 @@ public class WuerfelnPanel extends CustomPanel {
 		});
 	}
 
-	public void update(int[] arr) {
+	public void update() {
+		int[] arr = model.getWuerfel();
 		int sum = arr[0] + arr[1];
 		this.ergebnis.setText("Gewuerfelt: " + arr[0] + "," + arr[1] + ". Summe: " + sum);
 	}

@@ -30,6 +30,7 @@ public class SpielerImpl implements Spieler {
 		for(int i = 0; i < wissensstreiter.length; i++) {
 			
 			wissensstreiter[i] = new WissensStreiterImpl();
+			wissensstreiter[i].setSpieler(this);
 			
 		}
 		

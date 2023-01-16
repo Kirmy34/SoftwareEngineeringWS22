@@ -6,7 +6,11 @@ import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
+import iwwwdnw.logic.port.Model;
+
 public class MessageLabel extends JLabel {
+	
+	private Model model;
 
 	/**
 	 * 
@@ -14,8 +18,9 @@ public class MessageLabel extends JLabel {
 	private static final long serialVersionUID = 1L;
 	private static final Dimension DIM = new Dimension(400, 50);
 
-	public MessageLabel() {
+	public MessageLabel(Model model) {
 		super();
+		this.model = model;
 		createGUI();
 	}
 	
@@ -28,8 +33,8 @@ public class MessageLabel extends JLabel {
 		this.setBorder(line);
 	}
 	
-	public void update(String text) {
-		this.setText(text);
+	public void update() {
+		this.setText(model.getMessage());
 	}
 
 }

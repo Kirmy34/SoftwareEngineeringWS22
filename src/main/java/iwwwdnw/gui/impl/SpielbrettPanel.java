@@ -9,9 +9,11 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
+import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.gui.*;
 import iwwwdnw.gui.port.Controller;
+import iwwwdnw.logic.port.Model;
 
 public class SpielbrettPanel extends CustomPanel {
 
@@ -19,36 +21,50 @@ public class SpielbrettPanel extends CustomPanel {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private JButton[][] buttons;
+	private RoundButton[][] buttons;
 	private Spieler[] spieler;
 	private static final int SIZE = 17;
 	private Controller controller;
+	private Model model;
 
-	public SpielbrettPanel(Spieler[] spieler, Controller ctrl) {
+	public SpielbrettPanel(Spieler[] spieler, Controller ctrl, Model model) {
 		super();
 		this.spieler = spieler;
-		buttons = new JButton[SIZE][SIZE];
+		buttons = new RoundButton[SIZE][SIZE];
 		this.controller = ctrl;
+		this.model = model;
 		createGUI();
 	}
-	
+
 	public void update() {
-		// TODO: blah
+		for (int i = 0; i < buttons.length; i++) {
+			for (int j = 0; j < buttons[i].length; j++) {
+				if (buttons[i][j] != null) {
+					Feld feld = model.getFeld(buttons[i][j].getId());
+					if (!feld.istFrei()) {
+						buttons[i][j].setBackground(feld.getWissensstreiter().getSpieler().getFarbe());
+					} else {
+						buttons[i][j].setBackground(Color.GRAY);
+					}
+				}
+			}
+		}
+
 	};
 
 	private void createGUI() {
 		c.insets = new Insets(1, 1, 1, 1);
 
 		// Startfelder
-		createButton(0, 0, 280, spieler[0].getFarbe());
-		createButton(16, 0, 281, spieler[1].getFarbe());
-		createButton(16, 16, 282, spieler[2].getFarbe());
-		createButton(0, 16, 283, spieler[3].getFarbe());
+		createButton(0, 0, 280, spieler[0].getFarbe().darker());
+		createButton(16, 0, 281, spieler[1].getFarbe().darker());
+		createButton(16, 16, 282, spieler[2].getFarbe().darker());
+		createButton(0, 16, 283, spieler[3].getFarbe().darker());
 
-		createButton(3, 3, 284, spieler[0].getFarbe());
-		createButton(13, 3, 285, spieler[1].getFarbe());
-		createButton(13, 13, 286, spieler[2].getFarbe());
-		createButton(3, 13, 287, spieler[3].getFarbe());
+		createButton(3, 3, 284, spieler[0].getFarbe().darker());
+		createButton(13, 3, 285, spieler[1].getFarbe().darker());
+		createButton(13, 13, 286, spieler[2].getFarbe().darker());
+		createButton(3, 13, 287, spieler[3].getFarbe().darker());
 
 		int c = 0;
 

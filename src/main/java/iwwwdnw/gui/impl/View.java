@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
+import iwwwdnw.logic.port.Model;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.impl.StateEnum;
@@ -23,41 +24,35 @@ public class View extends CustomPanel implements Observer {
 	private SpielbrettPanel spielbrettPanel;
 	private WissensstreiterPanel wissensstreiterPanel;
 
-	private State currentState;
 	private Controller controller;
-	private Spielzug model;
+	private Model model;
 	private boolean running = true;
 
 	private Spieler[] spieler;
 
 	public View(LogicFactory factory) {
 		super();
-		this.model = factory.spielzug();
+		this.model = factory.model();
 		this.model.attach(this);
 		this.controller = new ControllerImpl(this, factory);
 
 		this.spieler = model.getSpieler();
 		wissenskategorienPanel = new CustomPanel();
-		messageLabel = new MessageLabel();
+		messageLabel = new MessageLabel(model);
 
 		wissensstandsanzeigerPanel = new WissensstandsanzeigerPanel(spieler);
-		spielbrettPanel = new SpielbrettPanel(spieler, controller);
-		wuerfelnPanel = new WuerfelnPanel(controller);
+		spielbrettPanel = new SpielbrettPanel(spieler, controller, model);
+		wuerfelnPanel = new WuerfelnPanel(controller, model);
 		wissensstreiterPanel = new WissensstreiterPanel(spieler);
-		this.currentState = StateEnum.am_Wuerfeln;
 		createGUI();
-	}
-
-	public void update(State newState) {
-		this.currentState = newState;
 	}
 
 	void display() {
 		wissensstandsanzeigerPanel.update();
 		spielbrettPanel.update();
-		messageLabel.setText("Hallo!");
+		messageLabel.update();
 		wissensstreiterPanel.update();
-		wuerfelnPanel.update(this.model.getWuerfel());
+		wuerfelnPanel.update();
 	}
 
 	void stop() {
@@ -116,6 +111,12 @@ public class View extends CustomPanel implements Observer {
 		this.addElement(wuerfelnPanel, 0, 2);
 
 		this.addElement(wissensstreiterPanel, 2, 2);
+	}
+
+	@Override
+	public void update(State newState) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

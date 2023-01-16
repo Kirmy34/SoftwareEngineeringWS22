@@ -5,5 +5,32 @@
 	<view uin="4akqkrlbuu0va07vgx0d">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
+		<property name="__options" value="option.nlayout.recursive=true"/>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.StatemachineFactory">
+			<property name="bounds" value="285,78,200,125"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_ast:src:iwwwdnw.statemachine.StatemachineFactory:FACTORY">
+				<property name="sourceAnchor" value="490,204"/>
+				<property name="targetAnchor" value="486,208"/>
+				<property name="bendpoints" value="519,204,519,237,486,237"/>
+				<property name="smooth_bendpoints" value="519,204,519,237,486,237"/>
+			</reference>
+		</reference>
+		<reference referencedUin="design:view:::V1hexuhlbuvtaae-834qq">
+			<property name="bounds" value="5,325,124,107"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="design:view:::py8r27lbuu0u61niqmjq">
+			<property name="bounds" value="255,245,122,139"/>
+			<property name="location_set_by_user" value="true"/>
+		</reference>
+		<reference referencedUin="jdt:e_class:src:iwwwdnw.statemachine.StatemachineFactoryImpl">
+			<property name="bounds" value="5,5,200,272"/>
+			<property name="location_set_by_user" value="true"/>
+			<reference referencedUin="jdt:l_impl:src:iwwwdnw.statemachine.StatemachineFactoryImpl:StatemachineFactory">
+				<property name="sourceAnchor" value="210,145"/>
+				<property name="targetAnchor" value="290,145"/>
+			</reference>
+		</reference>
 	</view>
 </nodeSet>

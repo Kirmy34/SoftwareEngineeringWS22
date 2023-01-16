@@ -11,8 +11,8 @@ import java.util.List;
 import iwwwdnw.statemachine.port.State;
 
 public enum StateEnum implements State {
-	InitGame, am_Wuerfeln, von_Heim_zum_Start, Bewegen, Duell, Figuren_umplatzieren,
-	MakeATurn(am_Wuerfeln, von_Heim_zum_Start, Bewegen, Duell, Figuren_umplatzieren), AwardCeremony, Spieler_wechseln;
+	InitGame, am_Wuerfeln, von_Heim_zum_Start, WissensStreiterAuswaehlen, ZielAusfaehlen, Duell, Figuren_umplatzieren,
+	MakeATurn(am_Wuerfeln, von_Heim_zum_Start, Duell, Figuren_umplatzieren), AwardCeremony, Spieler_wechseln;
 
 	private List<State> subStates;
 
