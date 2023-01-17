@@ -88,25 +88,26 @@ public class ModelImpl implements Model {
 	}
 
 	private void serviceZielAuswaehlen(int req) {
-		if (this.spielzug.zielAuswaehlen(req)) {
+		if (this.spielzug.getFeld(req).istFrei()) {
 
-			// TODO: Check ob noch bewegungen uebrig
-			if (this.spielzug.getBewegungen() == 0) {
-				this.sm.setState(StateEnum.am_Wuerfeln);
-				this.spielzug.spielerWechseln();
-				this.message = GuiTexts.WUERFELN;
-				return;
+			if (this.spielzug.zielAuswaehlen(req)) {
+
+				if (this.spielzug.getBewegungen() == 0) {
+					this.sm.setState(StateEnum.am_Wuerfeln);
+					this.spielzug.spielerWechseln();
+					this.message = GuiTexts.WUERFELN;
+					return;
+				}
+
+				this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
+				this.sm.setState(StateEnum.WissensStreiterAuswaehlen);
 			}
-
-			if (!this.spielzug.getFeld(req).istFrei()) {
+		} else {
+			if (this.spielzug.zielAuswaehlen(req)) {
 				spielzug.spielerWechseln();
 				this.message = GuiTexts.DUELL;
 				this.sm.setState(StateEnum.am_Wuerfeln);
-
 			}
-
-			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
-			this.sm.setState(StateEnum.WissensStreiterAuswaehlen);
 		}
 	}
 
