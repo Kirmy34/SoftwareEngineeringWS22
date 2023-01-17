@@ -22,5 +22,7 @@ public interface Spielzug {
 	boolean zielAuswaehlen(int id);
 
 	void spielerWechseln();
+	
+	boolean spielerHatFreiesStartFeld(int spielerID);
 
 }

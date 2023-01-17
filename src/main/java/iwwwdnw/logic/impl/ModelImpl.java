@@ -19,9 +19,6 @@ public class ModelImpl implements Model {
 		this.message = "Spieler " + sp.getSpielerAmZug().getName() + " ist an der Reihe, bitte würfeln!";
 	}
 
-	/*
-	 * ===================================================
-	 */
 	@Override
 	public void service(int req) {
 		this.message = "Es wurde button " + req + " gedrückt.";
@@ -45,28 +42,30 @@ public class ModelImpl implements Model {
 	}
 
 	private void serviceAmWuerfeln(int req) {
-		if (req == 1000) {
-			spielzug.wuerfeln();
-
-			int[] w = this.getWuerfel();
-			int sum = w[0] + w[1];
-
-			if (sum == 7) {
-				// TODO: Check ob Startfelder frei und WissensStreiter in Heimfeld > 0
-
-				sm.setState(StateEnum.von_Heim_zum_Start);
-				this.message = "Du hast eine 7 du Mongo, bringe eine Figur auf ein Startfeld";
-			} else {
-				// TODOL: Check ob WissensStreiter auf Spielbrett
-				if (spielzug.getSpielerAmZug().hatWissensStreiterAufSpielbrett()) {
-					sm.setState(StateEnum.WissensStreiterAuswaehlen);
-					this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
-				}
-
-			}
-		} else {
+		if (req != 1000) {
 			this.message = "Du musst würfeln du Mongo";
+			return;
 		}
+
+		spielzug.wuerfeln();
+
+		int[] w = this.getWuerfel();
+		int sum = w[0] + w[1];
+
+		if (sum == 7 && spielzug.getSpielerAmZug().getNextFreeWissensStreiter() != null
+				&& this.spielzug.spielerHatFreiesStartFeld(spielzug.getSpielerAmZug().getId())) {
+
+			// TODO: Check ob Startfelder frei
+
+			sm.setState(StateEnum.von_Heim_zum_Start);
+			this.message = "Du hast eine 7 du Mongo, bringe eine Figur auf ein Startfeld";
+			return;
+		}
+		if (spielzug.getSpielerAmZug().hatWissensStreiterAufSpielbrett()) {
+			sm.setState(StateEnum.WissensStreiterAuswaehlen);
+			this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
+		}
+
 	}
 
 	private void serviceVonHeimZumStart(int req) {

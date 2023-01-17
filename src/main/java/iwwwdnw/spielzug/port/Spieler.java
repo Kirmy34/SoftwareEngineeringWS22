@@ -35,5 +35,7 @@ public interface Spieler {
 
 	boolean hatWissensStreiterAufSpielbrett();
 
+	public WissensStreiter getNextFreeWissensStreiter();
+
 
 }
