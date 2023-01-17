@@ -246,15 +246,16 @@ public class SpielBrettImpl implements SpielBrett {
 	@Override
 	public boolean wissensstreiterBewegen(Feld startfeld, Feld zielfeld) {
 
-//		if (startfeld.getWissensstreiter().getPreviousFeld().equals(zielfeld)) {
-//			return false;
-//		}
+		if (startfeld.getWissensstreiter().getPreviousFeld().getId() == zielfeld.getId() || startfeld.getId() == zielfeld.getId())
+		{
+			return false;
+		}
 
 		if (zielfeld.istFrei()) {
 
 			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
 			startfeld.setWissensstreiter(null);
-//			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
 			zielfeld.getWissensstreiter().setFeld(zielfeld);
 			return true;
 
@@ -265,6 +266,8 @@ public class SpielBrettImpl implements SpielBrett {
 
 			WissensStreiter w1 = startfeld.getWissensstreiter();
 			WissensStreiter w2 = zielfeld.getWissensstreiter();
+			w1.getSpieler().givePoint(0);
+			w2.getSpieler().takePoint(3);
 
 			zielfeld.setWissensstreiter(w1);
 			startfeld.setWissensstreiter(null);
@@ -333,6 +336,7 @@ public class SpielBrettImpl implements SpielBrett {
 	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, int id) {
 		StartFeld startfeld = this.startfelder[id - 280];
 
+
 		if (startfeld.istFrei()) {
 			startfeld.setWissensstreiter(wissensstreiter);
 			wissensstreiter.setFeld(startfeld);
@@ -341,6 +345,8 @@ public class SpielBrettImpl implements SpielBrett {
 		} else if (startfeld.vonGegnerBesetzt(wissensstreiter)) {
 			WissensStreiter w1 = wissensstreiter;
 			WissensStreiter w2 = startfeld.getWissensstreiter();
+			w1.getSpieler().givePoint(0);
+			w2.getSpieler().takePoint(3);
 
 			startfeld.setWissensstreiter(w1);
 

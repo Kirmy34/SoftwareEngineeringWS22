@@ -4,33 +4,34 @@ import java.awt.Color;
 import java.util.List;
 
 public interface Spieler {
+	
+	public static final Color colors[] = {Color.BLACK, Color.RED, Color.BLUE, Color.GREEN.darker(), Color.YELLOW, Color.MAGENTA};
+	
+	public int getId();
 
-	static final Color colors[] = { Color.BLACK, Color.RED, Color.BLUE, Color.GREEN.darker(), Color.YELLOW,
-			Color.MAGENTA };
+	public int getAlter();
 
-	int getId();
+	public Color getFarbe();
 
-	int getAlter();
+	public String getName();
 
-	Color getFarbe();
+	public int[] getWissensstandsanzeige();
+	
 
-	String getName();
 
-	int[] getWissensstandsanzeige();
-
-	int[] getPoints();
-
-	boolean givePoint(int index);
-
-	boolean takePoint(int index);
-
-	WissensStreiter[] getWissensstreiter();
-
-	void setStartfeld(StartFeld startfeld);
-
-	List<StartFeld> getStartfelder();
-
-	WissensStreiter getNextFreeWissensStreiter();
+	public boolean givePoint(int index);
+	
+	public boolean takePoint(int index);
+	
+	public WissensStreiter[] getWissensstreiter();
+	
+	public void setWissensstreiter(WissensStreiter[] wissensstreiter);
+	
+	public void setStartfelder(List<StartFeld> startfelder);
+	
+	public void setStartfeld(StartFeld startfeld);
+	
+	public List<StartFeld> getStartfelder();
 
 	boolean hatWissensStreiterAufSpielbrett();
 
