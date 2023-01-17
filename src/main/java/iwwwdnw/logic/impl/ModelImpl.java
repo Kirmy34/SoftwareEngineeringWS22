@@ -55,7 +55,6 @@ public class ModelImpl implements Model {
 		if (sum == 7 && spielzug.getSpielerAmZug().getNextFreeWissensStreiter() != null
 				&& this.spielzug.spielerHatFreiesStartFeld(spielzug.getSpielerAmZug().getId())) {
 
-
 			sm.setState(StateEnum.von_Heim_zum_Start);
 			this.message = GuiTexts.STARTFELDAUSWAEHLEN;
 			return;
@@ -65,7 +64,6 @@ public class ModelImpl implements Model {
 			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 		}
 		this.message = GuiTexts.WUERFELN;
-		
 
 	}
 
@@ -100,7 +98,12 @@ public class ModelImpl implements Model {
 				return;
 			}
 
-			// TODO: Check ob Duell
+			if (!this.spielzug.getFeld(req).istFrei()) {
+				spielzug.spielerWechseln();
+				this.message = "Duell!!1!";
+				this.sm.setState(StateEnum.am_Wuerfeln);
+
+			}
 
 			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 			this.sm.setState(StateEnum.WissensStreiterAuswaehlen);

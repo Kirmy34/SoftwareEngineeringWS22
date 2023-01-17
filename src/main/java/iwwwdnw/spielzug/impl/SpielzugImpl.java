@@ -74,16 +74,14 @@ public class SpielzugImpl implements Spielzug {
 
 	public boolean zielAuswaehlen(int id) {
 		Feld feld = this.spielbrett.getFeld(id);
-		if (feld.istFrei()) {
-			if (this.spielbrett.wissensstreiterBewegen(startfeld, feld)) {
-				this.bewegungenNochÜbrig--;
-				return true;
-			}
+		if (this.spielbrett.wissensstreiterBewegen(startfeld, feld)) {
+			return false;
 		}
-
-		// TODO Check for Duell
-
-		return false;
+		
+		if (feld.istFrei()) {
+			this.bewegungenNochÜbrig--;
+		}
+		return true;
 	}
 
 //	@Override
