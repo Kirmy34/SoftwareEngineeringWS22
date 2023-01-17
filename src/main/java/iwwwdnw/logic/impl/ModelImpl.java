@@ -21,7 +21,7 @@ public class ModelImpl implements Model {
 
 	@Override
 	public void service(int req) {
-		this.message = "Es wurde button " + req + " gedrückt.";
+		this.message = "Es wurde button " + req + " gedrueckt.";
 
 		switch (sm.getState()) {
 		case am_Wuerfeln:
