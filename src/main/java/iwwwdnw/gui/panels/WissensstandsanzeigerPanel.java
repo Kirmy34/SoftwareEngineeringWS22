@@ -21,7 +21,7 @@ public class WissensstandsanzeigerPanel extends CustomPanel {
 
 		super();
 		this.spieler = spieler;
-		wissensstand = new JLabel[STANDARD_ANZAHL_WISSENSKATEGORIEN + 1][spieler.length + 1];
+		wissensstand = new JLabel[STANDARD_ANZAHL_WISSENSKATEGORIEN + 2][spieler.length + 1];
 		createGUI();
 
 	}
@@ -41,36 +41,38 @@ public class WissensstandsanzeigerPanel extends CustomPanel {
 
 			}
 		}
-		wissensstand[0][0].setText("I");
-		wissensstand[1][0].setText("II");
-		wissensstand[2][0].setText("III");
-		wissensstand[3][0].setText("IV");
-		wissensstand[4][0].setText("\u03A3");
+		wissensstand[1][0].setText("I");
+		wissensstand[2][0].setText("II");
+		wissensstand[3][0].setText("III");
+		wissensstand[4][0].setText("IV");
+		wissensstand[5][0].setText("\u03A3");
+		
+		for(int y = 0; y < spieler.length; y++) {
+			wissensstand[0][y+1].setPreferredSize(new Dimension(100, 31));
+			wissensstand[0][y+1].setText(spieler[y].getName());
+		}
 
 		for (int y = 1; y <= spieler.length; y++) {
-			for (int i = 0; i <= STANDARD_ANZAHL_WISSENSKATEGORIEN; i++) {
-				if (i != STANDARD_ANZAHL_WISSENSKATEGORIEN) {
-					wissensstand[i][y].setBackground(spieler[y - 1].getFarbe());
-					wissensstand[i][y].setForeground(Color.WHITE);
-					wissensstand[i][y].setBorder(BorderFactory.createLineBorder(Color.BLACK));
-				}
+			for (int i = 1; i <= STANDARD_ANZAHL_WISSENSKATEGORIEN; i++) {
+				
+				wissensstand[i][y].setBackground(spieler[y - 1].getFarbe());
+				wissensstand[i][y].setForeground(Color.WHITE);
+				wissensstand[i][y].setBorder(BorderFactory.createLineBorder(Color.BLACK));
 			}
 		}
-		// initialize
-		update();
 
 	}
 
 	public void update() {
 		for(int y = 1; y <= spieler.length; y++) {
 			int sum = 0;
-			for(int i = 0; i < STANDARD_ANZAHL_WISSENSKATEGORIEN; i++) {
+			for(int i = 1; i <= STANDARD_ANZAHL_WISSENSKATEGORIEN; i++) {
 				
-				int point = spieler[y-1].getWissensstandsanzeige()[i];
+				int point = spieler[y-1].getWissensstandsanzeige()[i-1];
 				sum = sum + point;
 				wissensstand[i][y].setText(String.valueOf(point));
 			}
-			wissensstand[STANDARD_ANZAHL_WISSENSKATEGORIEN][y].setText(String.valueOf(sum));
+			wissensstand[STANDARD_ANZAHL_WISSENSKATEGORIEN+1][y].setText(String.valueOf(sum));
 		}
 	}
 

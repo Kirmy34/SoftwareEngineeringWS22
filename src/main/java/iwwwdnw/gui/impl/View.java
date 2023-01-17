@@ -97,16 +97,20 @@ public class View extends CustomPanel {
 		wissenskategorienPanel.addElement(iii, 0, 2);
 		wissenskategorienPanel.addElement(iv, 0, 3);
 		this.addElement(wissenskategorienPanel, 0, 0);
-
+		
 		this.addElement(messageLabel, 1, 0);
+	
 
 		this.addElement(wissensstandsanzeigerPanel, 2, 0);
+		
+		
 
 		this.addElement(spielbrettPanel, 1, 1);
 
 		c.anchor = GridBagConstraints.SOUTH;
 
 		this.addElement(wuerfelnPanel, 0, 2);
+		
 
 		this.addElement(wissensstreiterPanel, 2, 2);
 	}

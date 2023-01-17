@@ -31,14 +31,12 @@ public class WissensstreiterPanel extends CustomPanel {
 		c.insets = new Insets(2, 2, 2, 2);
 		for (int i = 0; i < wissensstreiter.length; i++) {
 			for (int y = 0; y < wissensstreiter[i].length; y++) {
-				JLabel label = new RoundLabel(spieler[y].getFarbe());
+				JLabel label = new RoundLabel(spieler[y].getFarbe().darker());
 				wissensstreiter[i][y] = label;
 				this.addElement(wissensstreiter[i][y], i, y);
 
 			}
 		}
-		// initialize
-		update();
 	}
 
 	public void update() {

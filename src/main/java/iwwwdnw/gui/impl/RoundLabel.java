@@ -1,8 +1,10 @@
 package iwwwdnw.gui.impl;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Shape;
 import java.awt.geom.Ellipse2D;
 
@@ -17,7 +19,7 @@ public class RoundLabel extends JLabel {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private static final Dimension DIM = new Dimension(30, 30);
+	private static final Dimension DIM = new Dimension(25, 25);
 	private Color borderColor;
 	private static final Color STANDARD_BACKGROUND = Color.WHITE;
 
@@ -39,7 +41,9 @@ public class RoundLabel extends JLabel {
 
 	protected void paintBorder(Graphics g) {
 		g.setColor(borderColor);
-		g.drawOval(0, 0, getSize().width - 1, getSize().height - 1);
+	    Graphics2D g2 = (Graphics2D) g;
+	    g2.setStroke(new BasicStroke(3));
+		g.drawOval(1, 1, getSize().width - 3, getSize().height - 3);
 	}
 
 	Shape shape;
