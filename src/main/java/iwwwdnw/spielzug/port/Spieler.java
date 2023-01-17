@@ -17,7 +17,7 @@ public interface Spieler {
 
 	public int[] getWissensstandsanzeige();
 	
-	public int[] getPoints();
+
 
 	public boolean givePoint(int index);
 	

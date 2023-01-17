@@ -68,7 +68,7 @@ public class WissensstandsanzeigerPanel extends CustomPanel {
 			int sum = 0;
 			for(int i = 0; i < STANDARD_ANZAHL_WISSENSKATEGORIEN; i++) {
 				
-				int point = spieler[y-1].getPoints()[i];
+				int point = spieler[y-1].getWissensstandsanzeige()[i];
 				sum = sum + point;
 				wissensstand[i][y].setText(String.valueOf(point));
 			}

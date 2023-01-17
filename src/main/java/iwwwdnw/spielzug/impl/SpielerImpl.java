@@ -38,10 +38,7 @@ public class SpielerImpl implements Spieler {
 		
 	}
 	
-	
-	public int[] getPoints() {
-		return points;
-	}
+
 	
 	
 	public List<StartFeld> getStartfelder() {
@@ -94,7 +91,15 @@ public class SpielerImpl implements Spieler {
 
 	public boolean givePoint(int index) {
 		if (this.points[index] >= 5) {
-			return false;
+			if(index == 3)
+			{
+				// Gewonnen
+				return false;
+
+			}
+			else {
+				return this.givePoint(index + 1);
+			}
 		}
 
 		this.points[index]++;
@@ -103,7 +108,13 @@ public class SpielerImpl implements Spieler {
 
 	public boolean takePoint(int index) {
 		if (this.points[index] <= 0) {
-			return false;
+			if(index == 0)
+			{
+				return false;
+			}
+			else {
+				return this.takePoint(index -1);
+			}
 		}
 		this.points[index]--;
 		return true;
