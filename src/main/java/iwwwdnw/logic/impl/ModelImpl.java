@@ -100,7 +100,7 @@ public class ModelImpl implements Model {
 
 			if (!this.spielzug.getFeld(req).istFrei()) {
 				spielzug.spielerWechseln();
-				this.message = "Duell!!1!";
+				this.message = GuiTexts.DUELL;
 				this.sm.setState(StateEnum.am_Wuerfeln);
 
 			}

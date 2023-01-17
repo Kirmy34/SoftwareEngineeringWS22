@@ -22,7 +22,7 @@ public class GuiTexts {
 		return s;
 	}
 	
-	
+	public static final String DUELL = "Es ist Zeit für ein Duell";
 	
 	
 }
