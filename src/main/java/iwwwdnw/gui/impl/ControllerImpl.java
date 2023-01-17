@@ -6,7 +6,6 @@ import java.util.Queue;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
 import iwwwdnw.logic.port.Model;
-import iwwwdnw.statemachine.port.State;
 
 public class ControllerImpl implements Controller {
 
@@ -16,10 +15,6 @@ public class ControllerImpl implements Controller {
 
 	ControllerImpl(LogicFactory factory) {
 		this.myModel = factory.model();
-	}
-
-	public void update(State newState) {
-		/* ggf. etwas tun */
 	}
 
 	public void doit() {
