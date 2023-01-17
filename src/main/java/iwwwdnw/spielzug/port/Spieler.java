@@ -35,4 +35,5 @@ public interface Spieler {
 
 	boolean hatWissensStreiterAufSpielbrett();
 
+
 }

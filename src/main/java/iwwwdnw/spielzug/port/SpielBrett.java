@@ -26,5 +26,7 @@ public interface SpielBrett {
 	boolean istStartFeldvonSpieler(Spieler sp, int feldId);
 	
 	Feld getFeld(int id);
+
+	boolean spielerHatFreiesStartFeld(int spielerID);
 	
 }

@@ -253,11 +253,23 @@ public class SpielBrettImpl implements SpielBrett {
 
 		if (zielfeld.istFrei()) {
 
-			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
-			startfeld.setWissensstreiter(null);
-			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
-			zielfeld.getWissensstreiter().setFeld(zielfeld);
-			return true;
+
+			List<Feld> wege = this.getPossibleWays(startfeld.getWissensstreiter());
+
+			for(int i = 0; i < wege.size(); i++)
+			{
+				if(wege.get(i).getId() == zielfeld.getId())
+				{
+					zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
+					startfeld.setWissensstreiter(null);
+					zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+					zielfeld.getWissensstreiter().setFeld(zielfeld);
+					return true;
+				}
+			}
+
+			return false;
+
 
 		}
 
@@ -382,6 +394,25 @@ public class SpielBrettImpl implements SpielBrett {
 			return this.startfelder[id - 280];
 		}
 
+	}
+
+
+	@Override
+	public boolean spielerHatFreiesStartFeld(int spielerID)
+	{
+		for(StartFeld startfeld : startfelder)
+		{
+			if(startfeld.getOwner().getId() == spielerID)
+			{
+				if(startfeld.istFrei())
+				{
+					return true;
+				}
+			}
+		}
+
+
+		return false;
 	}
 
 }

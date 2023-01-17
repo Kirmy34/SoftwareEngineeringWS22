@@ -70,7 +70,12 @@ public class SpielerImpl implements Spieler {
 	public WissensStreiter[] getWissensstreiter() {
 		return wissensstreiter;
 	}
-	
+
+	@Override
+	public void setWissensstreiter(WissensStreiter[] wissensstreiter) {
+
+	}
+
 	public int getAlter() {
 		return alter;
 	}
@@ -118,7 +123,11 @@ public class SpielerImpl implements Spieler {
 		return false;
 	}
 
+
+
+
 }
+
 
 	
 
