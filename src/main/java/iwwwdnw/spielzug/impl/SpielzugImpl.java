@@ -41,17 +41,6 @@ public class SpielzugImpl implements Spielzug {
 	}
 
 	@Override
-	public boolean wissensstreiterBewegen(int feldId) {
-
-		// Bewegungs stuff
-
-		this.bewegungenNochÜbrig--;
-
-		return true;
-
-	}
-
-	@Override
 	public boolean vomHeimZumStartfeld(int feldId) {
 		if (feldId < 280 || feldId > 300) {
 			return false;

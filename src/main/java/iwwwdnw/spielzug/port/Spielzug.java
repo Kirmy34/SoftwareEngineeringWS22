@@ -3,8 +3,6 @@ package iwwwdnw.spielzug.port;
 public interface Spielzug {
 	public void wuerfeln();
 
-	public boolean wissensstreiterBewegen(int feldId);
-
 	public boolean vomHeimZumStartfeld(int feldId);
 
 	public Spieler[] getSpieler();
