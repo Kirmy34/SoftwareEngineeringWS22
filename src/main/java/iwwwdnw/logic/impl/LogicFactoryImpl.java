@@ -2,11 +2,8 @@ package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.LogicFactory;
 import iwwwdnw.logic.port.Model;
-import iwwwdnw.spielzug.SpielzugFactory;
 import iwwwdnw.spielzug.impl.SpielzugImpl;
-import iwwwdnw.spielzug.port.Spielzug;
-import iwwwdnw.statemachine.impl.StateMachineImpl;
-import iwwwdnw.statemachine.port.Subject;
+import iwwwdnw.statemachine.impl.StateMachineImpl;;
 
 
 public class LogicFactoryImpl implements LogicFactory {
@@ -22,10 +19,5 @@ public class LogicFactoryImpl implements LogicFactory {
 
 		return this.model;
 	}
-
-//	@Override
-//	public Subject subject() {
-//		return spielzug();
-//	}
 
 }

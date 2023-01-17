@@ -2,19 +2,21 @@ package iwwwdnw.gui.impl;
 
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
+import java.util.Date;
 
 import javax.swing.JLabel;
 
+import iwwwdnw.gui.panels.CustomPanel;
+import iwwwdnw.gui.panels.SpielbrettPanel;
+import iwwwdnw.gui.panels.WissensstandsanzeigerPanel;
+import iwwwdnw.gui.panels.WissensstreiterPanel;
+import iwwwdnw.gui.panels.WuerfelnPanel;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
 import iwwwdnw.logic.port.Model;
 import iwwwdnw.spielzug.port.Spieler;
-import iwwwdnw.spielzug.port.Spielzug;
-import iwwwdnw.statemachine.impl.StateEnum;
-import iwwwdnw.statemachine.port.Observer;
-import iwwwdnw.statemachine.port.State;
 
-public class View extends CustomPanel implements Observer {
+public class View extends CustomPanel {
 
 	private static final long serialVersionUID = 1L;
 	private CustomPanel wissenskategorienPanel;
@@ -28,12 +30,14 @@ public class View extends CustomPanel implements Observer {
 	private Model model;
 	private boolean running = true;
 
+	private int fps;
+	private long time;
+
 	private Spieler[] spieler;
 
 	public View(LogicFactory factory) {
 		super();
 		this.model = factory.model();
-		this.model.attach(this);
 		this.controller = new ControllerImpl(this, factory);
 
 		this.spieler = model.getSpieler();
@@ -44,6 +48,8 @@ public class View extends CustomPanel implements Observer {
 		spielbrettPanel = new SpielbrettPanel(spieler, controller, model);
 		wuerfelnPanel = new WuerfelnPanel(controller, model);
 		wissensstreiterPanel = new WissensstreiterPanel(spieler);
+		this.time = new Date().getTime();
+		this.fps = 0;
 		createGUI();
 	}
 
@@ -63,28 +69,20 @@ public class View extends CustomPanel implements Observer {
 		while (running) {
 			this.display();
 			this.controller.doit();
+//			this.showGameInfo();
 		}
 	}
 
-//	public MessageLabel getMessageLabel() {
-//		return messageLabel;
-//	}
-//
-//	public WissensstandsanzeigerPanel getWissensstandsanzeigerPanel() {
-//		return wissensstandsanzeigerPanel;
-//	}
-//
-//	public WuerfelnPanel getWuerfelnPanel() {
-//		return wuerfelnPanel;
-//	}
-//
-//	public SpielbrettPanel getSpielbrettPanel() {
-//		return spielbrettPanel;
-//	}
-//
-//	public WissensstreiterPanel getWissensstreiterPanel() {
-//		return wissensstreiterPanel;
-//	}
+	@SuppressWarnings("unused")
+	private void showGameInfo() {
+		fps++;
+
+		if (new Date().getTime() > time + 1000) {
+			System.out.print('\r' + "FPS: " + fps + ", Current State: " + model.getState());
+			fps = 0;
+			time = new Date().getTime();
+		}
+	}
 
 	private void createGUI() {
 		c.insets = new Insets(2, 2, 2, 2);
@@ -111,12 +109,6 @@ public class View extends CustomPanel implements Observer {
 		this.addElement(wuerfelnPanel, 0, 2);
 
 		this.addElement(wissensstreiterPanel, 2, 2);
-	}
-
-	@Override
-	public void update(State newState) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }

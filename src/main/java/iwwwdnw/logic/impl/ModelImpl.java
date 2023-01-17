@@ -1,12 +1,12 @@
 package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.spielzug.impl.SpielzugImpl;
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.impl.StateEnum;
-import iwwwdnw.statemachine.port.Observer;
-import iwwwdnw.statemachine.port.State;
+import iwwwdnw.statemachine.impl.StateMachineImpl;
 import iwwwdnw.statemachine.port.StateMachine;
 
 public class ModelImpl implements Model {
@@ -15,7 +15,7 @@ public class ModelImpl implements Model {
 	private Spielzug spielzug;
 	private String message;
 
-	ModelImpl(StateMachine sm, Spielzug sp) {
+	public ModelImpl(StateMachine sm, Spielzug sp) {
 		this.sm = sm;
 		this.spielzug = sp;
 		this.message = "Spieler " + sp.getSpielerAmZug().getName() + " ist an der Reihe, bitte würfeln!";
@@ -24,11 +24,8 @@ public class ModelImpl implements Model {
 	/*
 	 * ===================================================
 	 */
-
 	@Override
 	public void service(int req) {
-
-		System.out.println("Current State: " + this.sm.getState().toString());
 		this.message = "Es wurde button " + req + " gedrückt.";
 
 		switch (sm.getState()) {
@@ -110,18 +107,6 @@ public class ModelImpl implements Model {
 	}
 
 	@Override
-	public void attach(Observer obs) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void detach(Observer obs) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public Spieler[] getSpieler() {
 		return this.spielzug.getSpieler();
 	}
@@ -138,6 +123,10 @@ public class ModelImpl implements Model {
 
 	public Feld getFeld(int id) {
 		return this.spielzug.getFeld(id);
+	}
+
+	public String getState() {
+		return sm.getState().toString();
 	}
 
 }

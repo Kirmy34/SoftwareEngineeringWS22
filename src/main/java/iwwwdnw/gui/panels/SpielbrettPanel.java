@@ -1,19 +1,15 @@
-package iwwwdnw.gui.impl;
+package iwwwdnw.gui.panels;
 
 import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.GridBagConstraints;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-
-import iwwwdnw.spielzug.port.Feld;
-import iwwwdnw.spielzug.port.Spieler;
-import iwwwdnw.gui.*;
+import iwwwdnw.gui.impl.RoundButton;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.spielzug.port.Feld;
+import iwwwdnw.spielzug.port.Spieler;
 
 public class SpielbrettPanel extends CustomPanel {
 

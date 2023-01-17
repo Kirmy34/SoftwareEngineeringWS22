@@ -1,4 +1,4 @@
-package iwwwdnw.gui.impl;
+package iwwwdnw.gui.panels;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -9,7 +9,6 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.port.Model;

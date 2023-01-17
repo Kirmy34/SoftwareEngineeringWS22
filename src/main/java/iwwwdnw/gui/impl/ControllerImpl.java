@@ -6,12 +6,9 @@ import java.util.Queue;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
 import iwwwdnw.logic.port.Model;
-import iwwwdnw.spielzug.port.Spielzug;
-import iwwwdnw.statemachine.port.Observer;
 import iwwwdnw.statemachine.port.State;
-import iwwwdnw.statemachine.port.Subject;
 
-public class ControllerImpl implements Controller, Observer {
+public class ControllerImpl implements Controller {
 
 	Queue<Integer> q = new LinkedList<>();
 

@@ -244,11 +244,6 @@ public class SpielBrettImpl implements SpielBrett {
 	}
 
 	@Override
-	public List[] getSpielBrett() {
-		return this.spielbrett;
-	}
-
-	@Override
 	public boolean wissensstreiterBewegen(Feld startfeld, Feld zielfeld) {
 
 //		if (startfeld.getWissensstreiter().getPreviousFeld().equals(zielfeld)) {
