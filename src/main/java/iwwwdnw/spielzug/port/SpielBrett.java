@@ -15,7 +15,7 @@ public interface SpielBrett {
 	
 	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, int id);
 	
-	public List<Feld> getPossibleWays(WissensStreiter wissensstreiter);
+	public List<Integer> getPossibleWays(WissensStreiter wissensstreiter);
 	
 	public void spielzugVorbei(WissensStreiter wissensstreiter); //nur, um previousFeld zu löschen
 

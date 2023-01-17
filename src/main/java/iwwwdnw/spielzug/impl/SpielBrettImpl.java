@@ -253,25 +253,21 @@ public class SpielBrettImpl implements SpielBrett {
 
 		if (zielfeld.istFrei()) {
 
-//			List<Feld> wege = this.getPossibleWays(startfeld.getWissensstreiter());
-//
-//			for (int i = 0; i < wege.size(); i++) {
-//				if (wege.get(i).getId() == zielfeld.getId()) {
-//					zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
-//					startfeld.setWissensstreiter(null);
-//					zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
-//					zielfeld.getWissensstreiter().setFeld(zielfeld);
-//					return true;
-//				}
-//			}
-//
-//			return false;
+			List<Integer> wege = this.getPossibleWays(startfeld.getWissensstreiter());
 
-			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
-			startfeld.setWissensstreiter(null);
-			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
-			zielfeld.getWissensstreiter().setFeld(zielfeld);
-			return true;
+			for (int i = 0; i < wege.size(); i++) {
+				if (wege.get(i) == zielfeld.getId()) {
+					zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
+					startfeld.setWissensstreiter(null);
+					zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+					zielfeld.getWissensstreiter().setFeld(zielfeld);
+					return true;
+				}
+			}
+
+			return false;
+
+
 
 		}
 
@@ -313,38 +309,11 @@ public class SpielBrettImpl implements SpielBrett {
 	}
 
 	@Override
-	public List<Feld> getPossibleWays(WissensStreiter wissensstreiter) {
-		int feldID = wissensstreiter.getFeld().getId();
+	public List<Integer> getPossibleWays(WissensStreiter wissensstreiter) {
 
-		int feldIDPrevious;
+		return this.spielbrett[wissensstreiter.getFeld().getId()];
 
-		try {
-			feldIDPrevious = wissensstreiter.getPreviousFeld().getId();
-		} catch (Exception e) {
-			feldIDPrevious = -100;
-		}
 
-		List felderInListe = this.spielbrett[feldID];
-		List<Feld> auswahl = new LinkedList<Feld>();
-
-		for (int i = 0; i < felderInListe.size(); i++) {
-			int feld = (int) felderInListe.get(i);
-
-			if (feld < BEGINSTARTFELD) {
-				auswahl.add(this.felder[i]);
-			} else {
-				auswahl.add(this.startfelder[feld - BEGINSTARTFELD]);
-			}
-
-		}
-
-		for (int i = 0; i < auswahl.size(); i++) {
-			if (!(auswahl.get(i).getId() == feldIDPrevious)) {
-				auswahl.remove(i);
-			}
-		}
-
-		return auswahl;
 	}
 
 	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, int id) {
