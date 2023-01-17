@@ -67,10 +67,10 @@ public class SpielzugImpl implements Spielzug {
 	}
 
 	public boolean waehleStart(int id) {
-		if (id > 300 ) {
+		if (id > 300) {
 			return false;
 		}
-		
+
 		Feld feld = this.spielbrett.getFeld(id);
 		if (feld.istFrei()) {
 			return false;
@@ -82,17 +82,18 @@ public class SpielzugImpl implements Spielzug {
 		this.startfeld = feld;
 		return true;
 	}
-	
+
 	public boolean zielAuswaehlen(int id) {
 		Feld feld = this.spielbrett.getFeld(id);
 		if (feld.istFrei()) {
-			this.spielbrett.wissensstreiterBewegen(startfeld, feld);
-			this.bewegungenNochÜbrig--;
-			return true;
+			if (this.spielbrett.wissensstreiterBewegen(startfeld, feld)) {
+				this.bewegungenNochÜbrig--;
+				return true;
+			}
 		}
-		
-		// TODO Check for Duell 
-		
+
+		// TODO Check for Duell
+
 		return false;
 	}
 
@@ -134,12 +135,16 @@ public class SpielzugImpl implements Spielzug {
 	@Override
 	public void spielerWechseln() {
 		int nextId = amZug.getId();
-		
+
 		if (++nextId == spielerListe.length) {
 			nextId = 0;
 		}
 		this.amZug = this.spielerListe[nextId];
-		
+
+	}
+
+	public boolean spielerHatFreiesStartFeld(int spielerID) {
+		return this.spielbrett.spielerHatFreiesStartFeld(spielerID);
 	}
 
 }

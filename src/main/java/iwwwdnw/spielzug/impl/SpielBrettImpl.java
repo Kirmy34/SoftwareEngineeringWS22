@@ -246,30 +246,32 @@ public class SpielBrettImpl implements SpielBrett {
 	@Override
 	public boolean wissensstreiterBewegen(Feld startfeld, Feld zielfeld) {
 
-		if (startfeld.getWissensstreiter().getPreviousFeld().getId() == zielfeld.getId() || startfeld.getId() == zielfeld.getId())
-		{
+		if (startfeld.getWissensstreiter().getPreviousFeld().getId() == zielfeld.getId()
+				|| startfeld.getId() == zielfeld.getId()) {
 			return false;
 		}
 
 		if (zielfeld.istFrei()) {
 
+//			List<Feld> wege = this.getPossibleWays(startfeld.getWissensstreiter());
+//
+//			for (int i = 0; i < wege.size(); i++) {
+//				if (wege.get(i).getId() == zielfeld.getId()) {
+//					zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
+//					startfeld.setWissensstreiter(null);
+//					zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+//					zielfeld.getWissensstreiter().setFeld(zielfeld);
+//					return true;
+//				}
+//			}
+//
+//			return false;
 
-			List<Feld> wege = this.getPossibleWays(startfeld.getWissensstreiter());
-
-			for(int i = 0; i < wege.size(); i++)
-			{
-				if(wege.get(i).getId() == zielfeld.getId())
-				{
-					zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
-					startfeld.setWissensstreiter(null);
-					zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
-					zielfeld.getWissensstreiter().setFeld(zielfeld);
-					return true;
-				}
-			}
-
-			return false;
-
+			zielfeld.setWissensstreiter(startfeld.getWissensstreiter());
+			startfeld.setWissensstreiter(null);
+			zielfeld.getWissensstreiter().setPreviousFeld(startfeld);
+			zielfeld.getWissensstreiter().setFeld(zielfeld);
+			return true;
 
 		}
 
@@ -348,10 +350,10 @@ public class SpielBrettImpl implements SpielBrett {
 	public boolean vomHeimZumStartfeld(WissensStreiter wissensstreiter, int id) {
 		StartFeld startfeld = this.startfelder[id - 280];
 
-
 		if (startfeld.istFrei()) {
 			startfeld.setWissensstreiter(wissensstreiter);
 			wissensstreiter.setFeld(startfeld);
+			wissensstreiter.setPreviousFeld(startfeld);
 			return true;
 
 		} else if (startfeld.vonGegnerBesetzt(wissensstreiter)) {
@@ -366,6 +368,8 @@ public class SpielBrettImpl implements SpielBrett {
 			w2.setFeld(null);
 			this.spielzugVorbei(w1);
 			this.duellVerloren(w2);
+			w1.setPreviousFeld(startfeld);
+			w2.setPreviousFeld(startfeld);
 			return true;
 		} else {
 			return false;
@@ -396,21 +400,15 @@ public class SpielBrettImpl implements SpielBrett {
 
 	}
 
-
 	@Override
-	public boolean spielerHatFreiesStartFeld(int spielerID)
-	{
-		for(StartFeld startfeld : startfelder)
-		{
-			if(startfeld.getOwner().getId() == spielerID)
-			{
-				if(startfeld.istFrei())
-				{
+	public boolean spielerHatFreiesStartFeld(int spielerID) {
+		for (StartFeld startfeld : startfelder) {
+			if (startfeld.getOwner().getId() == spielerID) {
+				if (startfeld.istFrei()) {
 					return true;
 				}
 			}
 		}
-
 
 		return false;
 	}
