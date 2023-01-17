@@ -43,7 +43,7 @@ public class ModelImpl implements Model {
 
 	private void serviceAmWuerfeln(int req) {
 		if (req != 1000) {
-			this.message = "Du musst würfeln du Mongo";
+			this.message = GuiTexts.WUERFELN_ERROR;
 			return;
 		}
 
