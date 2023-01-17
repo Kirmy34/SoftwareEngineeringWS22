@@ -277,7 +277,7 @@ public class SpielBrettImpl implements SpielBrett {
 			WissensStreiter w1 = startfeld.getWissensstreiter();
 			WissensStreiter w2 = zielfeld.getWissensstreiter();
 			w1.getSpieler().givePoint(0);
-			w2.getSpieler().takePoint(3);
+			w2.getSpieler().takePoint(0);
 
 			zielfeld.setWissensstreiter(w1);
 			startfeld.setWissensstreiter(null);
@@ -286,6 +286,11 @@ public class SpielBrettImpl implements SpielBrett {
 			w2.setFeld(null);
 			this.spielzugVorbei(w1);
 			this.duellVerloren(w2);
+			w1.setPreviousFeld(w1.getFeld());
+			w2.setPreviousFeld(w2.getFeld());
+			
+			
+			
 			return true;
 		}
 

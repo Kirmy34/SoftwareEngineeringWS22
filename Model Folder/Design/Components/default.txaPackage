@@ -61,7 +61,7 @@
 			<property name="$metaclass" value="Port20"/>
 			<property name="isService" value="true"/>
 			<property name="visibility" value="public"/>
-			<property name="$name" value="spielmanager"/>
+			<property name="$name" value="Model"/>
 			<link uin="ieje0rlbjgjywa-tx12h9">
 				<property name="$metaclass" value="ProvidedInterface20"/>
 				<participant referencedUin="design:node:::-vedwtdlbjgf6bm-yn2lln:ba089nlbjg4rm5-22mdcu" role="Client"></participant>

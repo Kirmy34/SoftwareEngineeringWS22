@@ -14,6 +14,7 @@ import iwwwdnw.gui.panels.WuerfelnPanel;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.LogicFactory;
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.logic.port.Subject;
 import iwwwdnw.spielzug.port.Spieler;
 
 public class View extends CustomPanel {
@@ -34,19 +35,21 @@ public class View extends CustomPanel {
 	private long time;
 
 	private Spieler[] spieler;
+	private Subject subject;
 
 	public View(LogicFactory factory) {
 		super();
 		this.model = factory.model();
+		this.subject = factory.subject();
 		this.controller = new ControllerImpl(factory);
 
 		this.spieler = model.getSpieler();
 		wissenskategorienPanel = new CustomPanel();
-		messageLabel = new MessageLabel(model);
+		messageLabel = new MessageLabel(subject);
 
 		wissensstandsanzeigerPanel = new WissensstandsanzeigerPanel(spieler);
-		spielbrettPanel = new SpielbrettPanel(spieler, controller, model);
-		wuerfelnPanel = new WuerfelnPanel(controller, model);
+		spielbrettPanel = new SpielbrettPanel(spieler, controller, subject);
+		wuerfelnPanel = new WuerfelnPanel(controller, subject);
 		wissensstreiterPanel = new WissensstreiterPanel(spieler);
 		this.time = new Date().getTime();
 		this.fps = 0;

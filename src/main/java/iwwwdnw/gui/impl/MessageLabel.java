@@ -7,10 +7,11 @@ import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.logic.port.Subject;
 
 public class MessageLabel extends JLabel {
 	
-	private Model model;
+	private Subject subject;
 
 	/**
 	 * 
@@ -18,9 +19,9 @@ public class MessageLabel extends JLabel {
 	private static final long serialVersionUID = 1L;
 	private static final Dimension DIM = new Dimension(400, 50);
 
-	public MessageLabel(Model model) {
+	public MessageLabel(Subject subject) {
 		super();
-		this.model = model;
+		this.subject = subject;
 		createGUI();
 	}
 	
@@ -34,7 +35,7 @@ public class MessageLabel extends JLabel {
 	}
 	
 	public void update() {
-		this.setText(model.getMessage());
+		this.setText(subject.getMessage());
 	}
 
 }

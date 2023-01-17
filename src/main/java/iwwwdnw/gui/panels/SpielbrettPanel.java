@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 import iwwwdnw.gui.impl.RoundButton;
 import iwwwdnw.gui.port.Controller;
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.logic.port.Subject;
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
 
@@ -21,14 +22,14 @@ public class SpielbrettPanel extends CustomPanel {
 	private Spieler[] spieler;
 	private static final int SIZE = 17;
 	private Controller controller;
-	private Model model;
+	private Subject subject;
 
-	public SpielbrettPanel(Spieler[] spieler, Controller ctrl, Model model) {
+	public SpielbrettPanel(Spieler[] spieler, Controller ctrl, Subject subject) {
 		super();
 		this.spieler = spieler;
 		buttons = new RoundButton[SIZE][SIZE];
 		this.controller = ctrl;
-		this.model = model;
+		this.subject = subject;
 		createGUI();
 	}
 
@@ -36,7 +37,7 @@ public class SpielbrettPanel extends CustomPanel {
 		for (int i = 0; i < buttons.length; i++) {
 			for (int j = 0; j < buttons[i].length; j++) {
 				if (buttons[i][j] != null) {
-					Feld feld = model.getFeld(buttons[i][j].getId());
+					Feld feld = subject.getFeld(buttons[i][j].getId());
 					if (!feld.istFrei()) {
 						buttons[i][j].setBackground(feld.getWissensstreiter().getSpieler().getFarbe());
 					} else {

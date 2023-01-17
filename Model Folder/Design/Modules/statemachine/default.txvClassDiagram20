@@ -5,12 +5,12 @@
 	<view uin="V1hexuhkuv26tyt-gtwkw4">
 		<property name="$defaultDiagram" value="true"/>
 		<property name="$metaclass" value="ClassDiagram20"/>
-		<reference referencedUin="design:view:::V-d9nhuokuv27nrq-tcnvj4">
-			<property name="bounds" value="5,5,128,74"/>
+		<reference referencedUin="design:view:::V1hexuhkuv2dojy1re4kq">
+			<property name="bounds" value="5,5,149,60"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
-		<reference referencedUin="design:view:::V1hexuhkuv2dojy1re4kq">
-			<property name="bounds" value="5,5,124,60"/>
+		<reference referencedUin="design:view:::5dl5fnld0ahcp0yxihgh">
+			<property name="bounds" value="174,-4,365,131"/>
 			<property name="location_set_by_user" value="true"/>
 		</reference>
 	</view>

@@ -9,11 +9,5 @@ public interface Model {
 	
 	Spieler[] getSpieler();
 	
-	int[] getWuerfel();
-	
-	String getMessage();
-	
-	Feld getFeld(int id);
-	
 	String getState();
 }

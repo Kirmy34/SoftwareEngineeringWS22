@@ -1,13 +1,14 @@
 package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.port.Model;
+import iwwwdnw.logic.port.Subject;
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.impl.StateEnum;
 import iwwwdnw.statemachine.port.StateMachine;
 
-public class ModelImpl implements Model {
+public class ModelImpl implements Model, Subject {
 
 	private StateMachine sm;
 	private Spielzug spielzug;
@@ -21,7 +22,7 @@ public class ModelImpl implements Model {
 
 	@Override
 	public void service(int req) {
-		this.message = "Es wurde button " + req + " gedrueckt.";
+		//this.message = "Es wurde button " + req + " gedrueckt.";
 
 		switch (sm.getState()) {
 		case am_Wuerfeln:
