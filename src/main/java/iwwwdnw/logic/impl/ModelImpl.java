@@ -16,7 +16,7 @@ public class ModelImpl implements Model {
 	public ModelImpl(StateMachine sm, Spielzug sp) {
 		this.sm = sm;
 		this.spielzug = sp;
-		this.message = "Spieler " + sp.getSpielerAmZug().getName() + " ist an der Reihe, bitte würfeln!";
+		this.message = GuiTexts.WUERFELN(sp.getSpielerAmZug().getName());
 	}
 
 	@Override
@@ -55,15 +55,14 @@ public class ModelImpl implements Model {
 		if (sum == 7 && spielzug.getSpielerAmZug().getNextFreeWissensStreiter() != null
 				&& this.spielzug.spielerHatFreiesStartFeld(spielzug.getSpielerAmZug().getId())) {
 
-			// TODO: Check ob Startfelder frei
 
 			sm.setState(StateEnum.von_Heim_zum_Start);
-			this.message = "Du hast eine 7 du Mongo, bringe eine Figur auf ein Startfeld";
+			this.message = GuiTexts.STARTFELDAUSWAEHLEN;
 			return;
 		}
 		if (spielzug.getSpielerAmZug().hatWissensStreiterAufSpielbrett()) {
 			sm.setState(StateEnum.WissensStreiterAuswaehlen);
-			this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
+			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 		}
 
 	}
@@ -72,19 +71,19 @@ public class ModelImpl implements Model {
 
 		if (this.spielzug.vomHeimZumStartfeld(req)) {
 
-			this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
+			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 			this.sm.setState(StateEnum.WissensStreiterAuswaehlen);
 		} else {
-			this.message = "Du Mongo weisst wohl nicht was ein Startfeld ist...";
+			this.message = GuiTexts.ZIELAUSWAEHLEN_ERROR;
 		}
 	}
 
 	private void serviceWissensStreiterAuswaehlen(int req) {
 		if (this.spielzug.waehleStart(req)) {
 			this.sm.setState(StateEnum.ZielAusfaehlen);
-			this.message = "Waehle ein Zielfeld... bitte";
+			this.message = GuiTexts.ZIELAUSWAEHLEN;
 		} else {
-			this.message = "Du Mongo musst auf einene deiner Wissensstreiter klicken...";
+			this.message = GuiTexts.WSAUSWAEHLEN_ERROR;
 		}
 	}
 
@@ -95,13 +94,13 @@ public class ModelImpl implements Model {
 			if (this.spielzug.getBewegungen() == 0) {
 				this.sm.setState(StateEnum.am_Wuerfeln);
 				this.spielzug.spielerWechseln();
-				this.message = "Spieler " + spielzug.getSpielerAmZug().getName() + " ist an der Reihe, bitte würfeln!";
+				this.message = GuiTexts.WUERFELN(spielzug.getSpielerAmZug().getName());
 				return;
 			}
 
 			// TODO: Check ob Duell
 
-			this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
+			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 			this.sm.setState(StateEnum.WissensStreiterAuswaehlen);
 		}
 	}
