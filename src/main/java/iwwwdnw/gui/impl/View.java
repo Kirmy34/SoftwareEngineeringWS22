@@ -38,7 +38,7 @@ public class View extends CustomPanel {
 	public View(LogicFactory factory) {
 		super();
 		this.model = factory.model();
-		this.controller = new ControllerImpl(this, factory);
+		this.controller = new ControllerImpl(factory);
 
 		this.spieler = model.getSpieler();
 		wissenskategorienPanel = new CustomPanel();

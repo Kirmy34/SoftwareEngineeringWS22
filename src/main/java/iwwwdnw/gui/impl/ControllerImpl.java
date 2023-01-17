@@ -12,15 +12,10 @@ public class ControllerImpl implements Controller {
 
 	Queue<Integer> q = new LinkedList<>();
 
-	private View myView;
-//	private Subject subject;
 	private Model myModel;
 
-	ControllerImpl(View view, LogicFactory factory) {
-		this.myView = view;
+	ControllerImpl(LogicFactory factory) {
 		this.myModel = factory.model();
-//		this.subject = factory.subject();
-//		this.subject.attach(this);
 	}
 
 	public void update(State newState) {

@@ -1,12 +1,10 @@
 package iwwwdnw.logic.impl;
 
 import iwwwdnw.logic.port.Model;
-import iwwwdnw.spielzug.impl.SpielzugImpl;
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.spielzug.port.Spielzug;
 import iwwwdnw.statemachine.impl.StateEnum;
-import iwwwdnw.statemachine.impl.StateMachineImpl;
 import iwwwdnw.statemachine.port.StateMachine;
 
 public class ModelImpl implements Model {
