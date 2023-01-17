@@ -64,7 +64,6 @@ public class SpielerImpl implements Spieler {
 		return wissensstreiter;
 	}
 
-
 	public int getAlter() {
 		return alter;
 	}
@@ -100,6 +99,16 @@ public class SpielerImpl implements Spieler {
 		}
 		this.points[index]--;
 		return true;
+	}
+
+	@Override
+	public boolean hatWissensStreiterAufSpielbrett() {
+		for (int i = 0; i < wissensstreiter.length; i++) {
+			if (!wissensstreiter[i].istAufHeimatFeld()) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }

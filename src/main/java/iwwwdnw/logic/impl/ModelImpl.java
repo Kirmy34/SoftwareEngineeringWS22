@@ -58,8 +58,11 @@ public class ModelImpl implements Model {
 				this.message = "Du hast eine 7 du Mongo, bringe eine Figur auf ein Startfeld";
 			} else {
 				// TODOL: Check ob WissensStreiter auf Spielbrett
+				if (spielzug.getSpielerAmZug().hatWissensStreiterAufSpielbrett()) {
+					sm.setState(StateEnum.WissensStreiterAuswaehlen);
+					this.message = "Du hast noch " + this.spielzug.getBewegungen() + " übrig";
+				}
 
-//				sm.setState(StateEnum.WissensStreiterAuswaehlen);
 			}
 		} else {
 			this.message = "Du musst würfeln du Mongo";
