@@ -2,11 +2,7 @@ package iwwwdnw.logic.impl;
 
 public class GuiTexts {
 
-	public static String WUERFELN(String name) {
-		String s = "Spieler " + name + " ist an der Reihe. Bitte Würfeln.";
-		return s;
-	}
-	
+	public static final String WUERFELN = "Bitte Würfeln.";	
 	public static final String WUERFELN_ERROR = "Bitte auf Würfeln klicken.";
 	
 	public static final String WSAUSWAEHLEN = "Bitte einen Wissensstreiter auswählen.";

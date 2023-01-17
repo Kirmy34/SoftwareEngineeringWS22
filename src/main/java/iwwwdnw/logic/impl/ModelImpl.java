@@ -16,12 +16,12 @@ public class ModelImpl implements Model {
 	public ModelImpl(StateMachine sm, Spielzug sp) {
 		this.sm = sm;
 		this.spielzug = sp;
-		this.message = GuiTexts.WUERFELN(sp.getSpielerAmZug().getName());
+		this.message = GuiTexts.WUERFELN;
 	}
 
 	@Override
 	public void service(int req) {
-		this.message = "Es wurde button " + req + " gedrÃ¼ckt.";
+		this.message = "Es wurde button " + req + " gedrückt.";
 
 		switch (sm.getState()) {
 		case am_Wuerfeln:
@@ -64,6 +64,8 @@ public class ModelImpl implements Model {
 			sm.setState(StateEnum.WissensStreiterAuswaehlen);
 			this.message = GuiTexts.BEWEGUNGENUEBRIG(this.spielzug.getBewegungen());
 		}
+		this.message = GuiTexts.WUERFELN;
+		
 
 	}
 
@@ -94,7 +96,7 @@ public class ModelImpl implements Model {
 			if (this.spielzug.getBewegungen() == 0) {
 				this.sm.setState(StateEnum.am_Wuerfeln);
 				this.spielzug.spielerWechseln();
-				this.message = GuiTexts.WUERFELN(spielzug.getSpielerAmZug().getName());
+				this.message = GuiTexts.WUERFELN;
 				return;
 			}
 
