@@ -118,7 +118,7 @@ public class ModelImpl implements Model {
 
 	@Override
 	public String getMessage() {
-		return this.message;
+		return spielzug.getSpielerAmZug().getName() + ": " + this.message;
 	}
 
 	public Feld getFeld(int id) {
