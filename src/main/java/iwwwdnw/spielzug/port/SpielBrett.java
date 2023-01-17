@@ -21,8 +21,6 @@ public interface SpielBrett {
 
 	public boolean duellVerloren(WissensStreiter wissensstreiter);
 	
-	public List[] getSpielBrett();
-	
 	public StartFeld[] getStartfelder();
 	
 	boolean istStartFeldvonSpieler(Spieler sp, int feldId);

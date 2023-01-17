@@ -2,9 +2,8 @@ package iwwwdnw.logic.port;
 
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.Spieler;
-import iwwwdnw.statemachine.port.Subject;
 
-public interface Model extends Subject {
+public interface Model {
 	
 	void service(int req);
 	
@@ -15,4 +14,6 @@ public interface Model extends Subject {
 	String getMessage();
 	
 	Feld getFeld(int id);
+	
+	String getState();
 }

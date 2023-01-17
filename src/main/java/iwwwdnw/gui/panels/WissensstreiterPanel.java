@@ -1,12 +1,10 @@
-package iwwwdnw.gui.impl;
+package iwwwdnw.gui.panels;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Insets;
 
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
 import javax.swing.JLabel;
 
+import iwwwdnw.gui.impl.RoundLabel;
 import iwwwdnw.spielzug.port.Spieler;
 
 public class WissensstreiterPanel extends CustomPanel {

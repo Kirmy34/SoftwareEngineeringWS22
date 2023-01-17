@@ -2,15 +2,12 @@ package iwwwdnw.spielzug.impl;
 
 import java.awt.Color;
 
-import Analyse.ObjectModel.WissensStreiter;
 import iwwwdnw.spielzug.port.Feld;
 import iwwwdnw.spielzug.port.SpielBrett;
 import iwwwdnw.spielzug.port.Spieler;
 import iwwwdnw.spielzug.port.Spielzug;
-import iwwwdnw.statemachine.port.Observer;
-import iwwwdnw.statemachine.port.Subject;
 
-public class SpielzugImpl implements Spielzug, Subject {
+public class SpielzugImpl implements Spielzug {
 
 	private SpielBrett spielbrett;
 	private Spieler[] spielerListe;
@@ -64,7 +61,7 @@ public class SpielzugImpl implements Spielzug, Subject {
 			return false;
 		}
 
-		this.spielbrett.vomHeimZumStartfeld(amZug.getWissensstreiter()[0], feldId);
+		this.spielbrett.vomHeimZumStartfeld(amZug.getNextFreeWissensStreiter(), feldId);
 		return true;
 
 	}
@@ -99,17 +96,17 @@ public class SpielzugImpl implements Spielzug, Subject {
 		return false;
 	}
 
-	@Override
-	public void attach(Observer obs) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void detach(Observer obs) {
-		// TODO Auto-generated method stub
-
-	}
+//	@Override
+//	public void attach(Observer obs) {
+//		// TODO Auto-generated method stub
+//
+//	}
+//
+//	@Override
+//	public void detach(Observer obs) {
+//		// TODO Auto-generated method stub
+//
+//	}
 
 	@Override
 	public Spieler[] getSpieler() {

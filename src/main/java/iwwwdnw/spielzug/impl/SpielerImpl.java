@@ -37,10 +37,20 @@ public class SpielerImpl implements Spieler {
 		
 		
 	}
-	
 
-	
-	
+	public int[] getPoints() {
+		return points;
+	}
+
+	public WissensStreiter getNextFreeWissensStreiter() {
+		for (int i = 0; i < 5; i++) {
+			if (this.wissensstreiter[i].istAufHeimatFeld()) {
+				return this.wissensstreiter[i];
+			}
+		}
+		return null;
+	}
+
 	public List<StartFeld> getStartfelder() {
 		return startfelder;
 	}
@@ -91,15 +101,7 @@ public class SpielerImpl implements Spieler {
 
 	public boolean givePoint(int index) {
 		if (this.points[index] >= 5) {
-			if(index == 3)
-			{
-				// Gewonnen
-				return false;
-
-			}
-			else {
-				return this.givePoint(index + 1);
-			}
+			return false;
 		}
 
 		this.points[index]++;
@@ -108,13 +110,7 @@ public class SpielerImpl implements Spieler {
 
 	public boolean takePoint(int index) {
 		if (this.points[index] <= 0) {
-			if(index == 0)
-			{
-				return false;
-			}
-			else {
-				return this.takePoint(index -1);
-			}
+			return false;
 		}
 		this.points[index]--;
 		return true;

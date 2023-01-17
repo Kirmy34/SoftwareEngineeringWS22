@@ -8,7 +8,7 @@ public class RoundButton extends JButton {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private static final Dimension DIM = new Dimension(30, 30);
+	private static final Dimension DIM = new Dimension(25, 25);
 	private Color borderColor;
 	private static final Color STANDARD_BACKGROUND = Color.GRAY;
 	private final int id;
